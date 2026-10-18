@@ -1,0 +1,2753 @@
+2014-06-25  Christophe Lyon  <christophe.lyon@linaro.org>
+
+	GCC Linaro 4.7-2014.06 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2014-06-13  Christophe Lyon  <christophe.lyon@linaro.org>
+
+	Merge from FSF GCC 4.7.4 (svn branches/gcc-4_7-branch 211571).
+
+2014-04-08  Yvan Roux  <yvan.roux@linaro.org>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2014-04-08  Yvan Roux  <yvan.roux@linaro.org>
+
+	GCC Linaro 4.7-2014.04 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2014-04-07  Kugan Vivekanandarajah  <kuganv@linaro.org>
+
+	gcc/
+	* tree-vect-patterns.c (vect_recog_sdivmod_pow2_pattern) : Pass
+	bb_vinfo to new_stmt_vec_info.
+
+2014-04-07  Michael Collison  <michael.collison@linaro.org>
+
+	Backport from mainline r202663
+	2013-09-17  Cong Hou  <congh@google.com>
+
+	gcc/
+	* tree-vect-patterns.c (vect_recog_dot_prod_pattern): Fix a bug
+	when checking the dot production pattern. The type of rhs operand
+	of multiply is now checked correctly.
+
+	gcc/testsuite/
+	* gcc.dg/vect/vect-reduc-dot-s16c.c: Add a test case with dot product
+	on two arrays with short and int types. This should not be recognized
+	as a dot product pattern.
+
+2014-04-07  Yvan Roux <yvan.roux@linaro.org>
+
+	Backport from trunk 199551.
+	2013-05-31  Marcus Shawcroft  <marcus.shawcroft@arm.com>
+
+	gcc/testsuite/
+	* gcc.target/arm/pr56184.C: Add -fno-short-enums.
+
+	Backport from trunk 196019.
+	2013-02-13  Vladimir Makarov  <vmakarov@redhat.com>
+
+	gcc/
+	PR target/56184
+	* ira.c (max_regno_before_ira): Move from ...
+	(ira): ... here.
+	(fix_reg_equiv_init): Use max_regno_before_ira instead of
+	vec_safe_length.
+
+	gcc/testsuite/
+	PR target/56184
+	* gcc.target/arm/pr56184.C: New test.
+
+2014-04-02  Yvan Roux  <yvan.roux@linaro.org>
+
+	Merge from FSF GCC 4.7.4 (svn branches/gcc-4_7-branch 209005).
+
+2014-01-13  Christophe Lyon  <christophe.lyon@linaro.org>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2014-01-13  Christophe Lyon  <christophe.lyon@linaro.org>
+
+	GCC Linaro 4.7-2014.01 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2014-01-07  Christophe lyon  <christophe.lyon@linaro.org>
+
+	Merge from FSF GCC 4.7.4 (svn branches/gcc-4_7-branch 206380).
+
+2014-01-06  Christophe Lyon  <christophe.lyon@linaro.org>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2013-12-20  Michael Collison  <michael.collison@linaro.org>
+
+	GCC Linaro 4.7-2013.12 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2013-12-20  Christophe Lyon  <christophe.lyon@linaro.org>
+
+	Backport from trunk 201879.
+	2013-08-20  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	* config/arm/linux-elf.h (MULTILIB_DEFAULTS): Remove definition.
+	* config/arm/t-linux-eabi (MULTILIB_OPTIONS): Document association
+	with MULTLIB_DEFAULTS.
+
+	Needed modification for backport:
+	* config/arm/linux-eabi.h (MULTILIB_DEFAULTS): Force un-definition.
+	* config/arm/linux-elf.h (MULTILIB_DEFAULTS): Not modified.
+
+2013-12-07  Christophe lyon  <christophe.lyon@linaro.org>
+
+	Merge from FSF GCC 4.7.4 (svn branches/gcc-4_7-branch 205768).
+
+2013-11-14  Christophe Lyon  <christophe.lyon@linaro.org>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2013-11-14  Christophe Lyon  <christophe.lyon@linaro.org>
+
+	GCC Linaro 4.7-2013.11 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2013-11-11  Christophe lyon  <christophe.lyon@linaro.org>
+
+	Merge from FSF GCC 4.7.4 (svn branches/gcc-4_7-branch 204656).
+
+2013-10-15  Christophe Lyon  <christophe.lyon@linaro.org>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2013-10-15  Christophe Lyon  <christophe.lyon@linaro.org>
+
+	GCC Linaro 4.7-2013.10 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2013-10-14  Christophe lyon  <christophe.lyon@linaro.org>
+
+	Merge from FSF GCC 4.7.4 (svn branches/gcc-4_7-branch 203509).
+
+2013-10-08  Matthias Klose  <doko@ubuntu.com>
+
+	gcc/
+	* config/aarch64/aarch64-protos.h (aarch64_regno_regclass): Fix
+	prototype.
+	* config/aarch64/aarch64.c (aarch64_regno_regclass): Likewise.
+
+2013-09-10  Christophe Lyon  <christophe.lyon@linaro.org>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2013-09-10  Christophe Lyon  <christophe.lyon@linaro.org>
+
+	GCC Linaro 4.7-2013.09 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2013-09-03  Christophe lyon  <christophe.lyon@linaro.org>
+
+	Merge from FSF GCC 4.7.4 (svn branches/gcc-4_7-branch 202210).
+
+2013-08-15  Yvan Roux  <yvan.roux@linaro.org>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2013-08-15  Yvan Roux  <yvan.roux@linaro.org>
+
+	GCC Linaro 4.7-2013.08 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2013-08-12  Yvan Roux  <yvan.roux@linaro.org>
+
+	Merge from FSF GCC 4.7.4 (svn branches/gcc-4_7-branch 201655).
+
+2013-07-03  Yvan Roux  <yvan.roux@linaro.org>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2013-07-03  Yvan Roux  <yvan.roux@linaro.org>
+
+	GCC Linaro 4.7-2013.07 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2013-06-26  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	Merge from FSF GCC 4.7.4 (svn branches/gcc-4_7-branch 200408).
+
+2013-06-14  Rob Savoye  <rob.savoye@linaro.org>
+
+	GCC Linaro 4.7-2013.06-1 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2013-06-03  Christophe lyon  <christophe.lyon@linaro.org>
+
+	Merge from FSF GCC 4.7.4 (svn branches/gcc-4_7-branch 199594).
+
+2013-05-14  Yvan Roux  <yvan.roux@linaro.org>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2013-05-14  Yvan Roux  <yvan.roux@linaro.org>
+
+	GCC Linaro 4.7-2013.05 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2013-05-08  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	Merge from FSF arm/aarch64-4.7-branch r198254..r198689.
+
+	Backport /work/sources/gcc-bzr/arm-aarch64-4.7 r198254:
+	[Backport AArch64] Fix vld1<q>_* asm constraints in arm_neon.h
+	
+	gcc/
+	* config/aarch64/arm_neon.h (vld1<q>_lane*): Fix constraints.
+	(vld1<q>_dup_<sufp><8, 16, 32, 64>): Likewise.
+	(vld1<q>_<sufp><8, 16, 32, 64>): Likewise.
+
+	Backport /work/sources/gcc-bzr/arm-aarch64-4.7 r198452:
+	gcc/
+	Backported from mainline.
+	* config/aarch64/aarch64-simd.md (aarch64_vcond_internal): Fix
+	floating-point vector comparisons against 0.
+	
+	gcc/testsuite/
+	Backported from mainline.
+	* gcc.target/aarch64/vect-fcm.x: Add check for zero forms of
+	inverse operands.
+	* gcc.target/aarch64/vect-fcm-eq-d.c: Check that new zero form
+	loop is vectorized.
+	* gcc.target/aarch64/vect-fcm-eq-f.c: Likewise.
+	* gcc.target/aarch64/vect-fcm-ge-d.c: Check that new zero form
+	loop is vectorized and that the correct instruction is generated.
+	* gcc.target/aarch64/vect-fcm-ge-f.c: Likewise.
+	* gcc.target/aarch64/vect-fcm-gt-d.c: Likewise.
+	* gcc.target/aarch64/vect-fcm-gt-f.c: Likewise.
+
+	Backport /work/sources/gcc-bzr/arm-aarch64-4.7 r198689:
+	Backport of AArch64 -fomit-frame-pointer fix
+
+2013-05-08  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	Merge from FSF GCC 4.7.3 (svn branches/gcc-4_7-branch 198701).
+
+2013-04-08  Yvan Roux  <yvan.roux@linaro.org>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2013-04-08  Yvan Roux  <yvan.roux@linaro.org>
+
+	GCC Linaro 4.7-2013.04 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2013-04-08  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	Merge from FSF arm/aarch64-4.7-branch r196346..r196381.
+
+	Backport /work/sources/gcc-bzr/arm-aarch64-4.7 r196346:
+	[AArch64/AArch64-4.7] Fix warning - aarch64_simd_make_constant has no prototype.
+	
+	gcc/
+	* config/aarch64/aarch64.c
+	(aarch64_simd_make_constant): Make static.
+
+	Backport /work/sources/gcc-bzr/arm-aarch64-4.7 r196348:
+	[AArch64/AArch64-4.7] Fix warning - No previous prototype for aarch64_init_simd_builtins.
+	
+	gcc/
+	* config/aarch64/aarch64-builtins.c
+	(aarch64_init_simd_builtins): Make static.
+
+	Backport /work/sources/gcc-bzr/arm-aarch64-4.7 r196351:
+	[AArch64/AArch64-4.7] Fix warning - aarch64_mangle_type has no prototype.
+	
+	gcc/
+	* config/aarch64/aarch64.c (aarch64_mangle_type): Make static.
+
+	Backport /work/sources/gcc-bzr/arm-aarch64-4.7 r196353:
+	[AArch64/AArch64-4.7] Fix warning - Unused variable in aarch64_float_const_representable.
+	
+	gcc/
+	* config/aarch64/aarch64.c
+	(aarch64_float_const_representable): Remove unused variable.
+
+	Backport /work/sources/gcc-bzr/arm-aarch64-4.7 r196375:
+	[AArch64-4.7] Fix warning: TARGET_FIXED_CONDITION_CODE_REGS redefined.
+	
+	gcc/
+	* config/aarch64/aarch64.c:
+	Fix typo in `#undef TARGET_FIXED_CONDITION_CODE_REGS'
+
+	Backport /work/sources/gcc-bzr/arm-aarch64-4.7 r196381:
+	[AArch64/AArch64-4.7][libgcc] Silence warnings in sync-cache.c
+	
+	libgcc/
+	* config/aarch64/sync-cache.c
+	(__aarch64_sync_cache_range): Silence warnings.
+
+2013-04-08  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	Merge from FSF GCC 4.7.3 (svn branches/gcc-4_7-branch 197188).
+
+2013-04-03  Christophe Lyon  <christophe.lyon@linaro.org>
+
+	Partial backport from mainline r195977:
+	2013-02-12  Christophe Lyon <christophe.lyon@linaro.org>
+
+	* config/arm/arm-protos.h (struct cpu_vec_costs): New struct type.
+	(struct tune_params): Add vec_costs field.
+	* config/arm/arm.c (arm_builtin_vectorization_cost): New function.
+	(TARGET_VECTORIZE_BUILTIN_VECTORIZATION_COST): Define.
+	(arm_default_vec_cost): New struct of type cpu_vec_costs.
+	(arm_slowmul_tune, arm_fastmul_tune, arm_strongarm_tune)
+	(arm_xscale_tune, arm_9e_tune, arm_v6t2_tune, arm_cortex_tune)
+	(arm_cortex_a15_tune, arm_cortex_a5_tune, arm_cortex_a9_tune)
+	(arm_v6m_tune, arm_fa726te_tune): Define new vec_costs field.
+
+2013-04-02  Christophe Lyon  <christophe.lyon@linaro.org>
+
+	Backport from mainline r196876:
+	2013-02-12  Christophe Lyon  <christophe.lyon@linaro.org>
+
+	gcc/
+	* config/arm/arm-protos.h (tune_params): Add
+	prefer_neon_for_64bits field.
+	* config/arm/arm.c (prefer_neon_for_64bits): New variable.
+	(arm_slowmul_tune): Default prefer_neon_for_64bits to false.
+	(arm_fastmul_tune, arm_strongarm_tune, arm_xscale_tune): Ditto.
+	(arm_9e_tune, arm_v6t2_tune, arm_cortex_tune): Ditto.
+	(arm_cortex_a5_tune, arm_cortex_a15_tune): Ditto.
+	(arm_cortex_a9_tune, arm_fa726te_tune): Ditto.
+	(arm_option_override): Handle -mneon-for-64bits new option.
+	* config/arm/arm.h (TARGET_PREFER_NEON_64BITS): New macro.
+	(prefer_neon_for_64bits): Declare new variable.
+	* config/arm/arm.md (arch): Rename neon_onlya8 and neon_nota8 to
+	avoid_neon_for_64bits and neon_for_64bits. Remove onlya8 and
+	nota8.
+	(arch_enabled): Handle new arch types. Remove support for onlya8
+	and nota8.
+	(one_cmpldi2): Use new arch names.
+	* config/arm/arm.opt (mneon-for-64bits): Add option.
+	* config/arm/neon.md (adddi3_neon, subdi3_neon, iordi3_neon)
+	(anddi3_neon, xordi3_neon, ashldi3_neon, <shift>di3_neon): Use
+	neon_for_64bits instead of nota8 and avoid_neon_for_64bits instead
+	of onlya8.
+	* doc/invoke.texi (-mneon-for-64bits): Document.
+
+	gcc/testsuite/
+	* gcc.target/arm/neon-for-64bits-1.c: New tests.
+	* gcc.target/arm/neon-for-64bits-2.c: Likewise.
+
+2013-03-11  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2013-03-11  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	GCC Linaro 4.7-2013.03 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2013-03-06  Venkataramanan Kumar  <venkataramanan.kumar@linaro.org>
+
+	2013-03-05  Jakub Jelinek  <jakub@redhat.com>
+
+	PR rtl-optimization/56484
+	* ifcvt.c (noce_process_if_block): If else_bb is NULL, avoid extending
+	lifetimes of hard registers on small register class machines.
+
+	* gcc.c-torture/compile/pr56484.c: New test.
+
+2013-02-26  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	Merge from FSF arm/aarch64-4.7-branch r196014..r196225.
+
+	Backport /work/sources/gcc-bzr/arm-aarch64-4.7 r196014:
+	[AArch64-4.7] Backport: Implement section anchors
+
+	gcc/
+	* common/config/aarch64/aarch64-common.c
+	(aarch_option_optimization_table): New.
+	(TARGET_OPTION_OPTIMIZATION_TABLE): Define.
+	* gcc/config/aarch64/aarch64-elf.h (ASM_OUTPUT_DEF): New definition.
+	* gcc/config/aarch64/aarch64.c (TARGET_MIN_ANCHOR_OFFSET): Define.
+	(TARGET_MAX_ANCHOR_OFFSET): Likewise.
+
+	Backport /work/sources/gcc-bzr/arm-aarch64-4.7 r196015:
+	[AArch64-4.7] Backport: Fix g++.dg/abi/aarch64_guard1.C
+
+	gcc/testsuite/
+	* g++.dg/abi/aarch64_guard1.C: Add -fno-section-anchors.
+
+	Backport /work/sources/gcc-bzr/arm-aarch64-4.7 r196225:
+	Subject: [AArch64] Add missing copyright and build dependency for  aarch64-simd-builtins.def
+
+	gcc/
+	* config/aarch64/aarch64-simd-builtins.def: Add copyright header.
+	* config/aarch64/t-aarch64
+	(aarch64-builtins.o): Depend on aarch64-simd-builtins.def.
+
+2013-02-26  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	Merge from FSF GCC 4.7.3 (svn branches/gcc-4_7-branch 196272).
+
+2013-02-18  Yvan Roux  <yvan.roux@linaro.org>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2013-02-18  Yvan Roux  <yvan.roux@linaro.org>
+
+	GCC Linaro 4.7-2013.02-01 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2013-02-14  Yvan Roux  <yvan.roux@linaro.org>
+	    Matthias Klose  <doko@ubuntu.com>
+
+	gcc/
+	* config/i386/t-linux64: Fix multiarch merge issues.
+	* config/i386/t-kfreebsd: Likewise.
+
+2013-02-11  Christophe Lyon  <christophe.lyon@linaro.org>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2013-02-11  Christophe Lyon  <christophe.lyon@linaro.org>
+
+	GCC Linaro 4.7-2013.02 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2013-02-10  Yvan Roux  <yvan.roux@linaro.org>
+	    Matthias Klose  <doko@ubuntu.com>
+
+	* Makefile.in (s-mlib): Fix revno 115051 merge issues.
+	* configure.ac: Likewise.
+	* configure: Regenerate.
+
+2013-02-09  Yvan Roux  <yvan.roux@linaro.org>
+
+	Merge from FSF arm/aarch64-4.7-branch r194976..r195716.
+
+	Backport arm-aarch64-4.7 r194976:
+	2013-01-07  Tejas Belagod  <tejas.belagod@arm.com>
+	
+	* config/aarch64/arm_neon.h (vmovn_high_is16, vmovn_high_s32,
+	vmovn_high_s64, vmovn_high_u16, vmovn_high_u32, vmovn_high_u64,
+	vqmovn_high_s16, vqmovn_high_s32, vqmovn_high_s64, vqmovn_high_u16,
+	vqmovn_high_u32, vqmovn_high_u64, vqmovun_high_s16, vqmovun_high_s32,
+	vqmovun_high_s64): Fix source operand number and update copyright.
+
+	Backport arm-aarch64-4.7 r195010:
+	[AARCH64-4.7] Backport: Add support for vector and scalar floating-point immediate loads.
+	
+	gcc/
+	* config/aarch64/aarch64-protos.h
+	(aarch64_const_double_zero_rtx_p): Rename to...
+	(aarch64_float_const_zero_rtx_p): ...this.
+	(aarch64_float_const_representable_p): New.
+	(aarch64_output_simd_mov_immediate): Likewise.
+	* config/aarch64/aarch64-simd.md (*aarch64_simd_mov<mode>): Refactor
+	move immediate case.
+	* config/aarch64/aarch64.c
+	(aarch64_const_double_zero_rtx_p): Rename to...
+	(aarch64_float_const_zero_rtx_p): ...this.
+	(aarch64_print_operand): Allow printing of new constants.
+	(aarch64_valid_floating_const): New.
+	(aarch64_legitimate_constant_p): Check for valid floating-point
+	constants.
+	(aarch64_simd_valid_immediate): Likewise.
+	(aarch64_vect_float_const_representable_p): New.
+	(aarch64_float_const_representable_p): Likewise.
+	(aarch64_simd_imm_zero_p): Also allow for floating-point 0.0.
+	(aarch64_output_simd_mov_immediate): New.
+	* config/aarch64/aarch64.md (*movsf_aarch64): Add new alternative.
+	(*movdf_aarch64): Likewise.
+	* config/aarch64/constraints.md (Ufc): New.
+	(Y): call aarch64_float_const_zero_rtx.
+	* config/aarch64/predicates.md (aarch64_fp_compare_operand): New.
+	
+	gcc/testsuite/
+	* gcc.target/aarch64/fmovd.c: New.
+	* gcc.target/aarch64/fmovf.c: Likewise.
+	* gcc.target/aarch64/fmovd-zero.c: Likewise.
+	* gcc.target/aarch64/fmovf-zero.c: Likewise.
+	* gcc.target/aarch64/vect-fmovd.c: Likewise.
+	* gcc.target/aarch64/vect-fmovf.c: Likewise.
+	* gcc.target/aarch64/vect-fmovd-zero.c: Likewise.
+	* gcc.target/aarch64/vect-fmovf-zero.c: Likewise.
+
+	Backport arm-aarch64-4.7 r195011:
+	[AARCH64-4.7] Backport: Make argument of ld1 intrinsics const.
+	
+	gcc/
+	2013-01-08  James Greenhalgh  <james.greenhalgh@arm.com>
+	
+	Backport from mainline.
+	2013-01-07  James Greenhalgh  <james.greenhalgh@arm.com>
+	
+	* config/aarch64/arm_neon.h (vld1_dup_*): Make argument const.
+	(vld1q_dup_*): Likewise.
+	(vld1_*): Likewise.
+	(vld1q_*): Likewise.
+	(vld1_lane_*): Likewise.
+	(vld1q_lane_*): Likewise.
+
+	Backport arm-aarch64-4.7 r195021:
+	2013-01-08  Tejas Belagod  <tejas.belagod@arm.com>
+	
+	* config/aarch64/aarch64-simd.md (aarch64_simd_vec_<su>mult_lo_<mode>,
+	aarch64_simd_vec_<su>mult_hi_<mode>): Separate instruction and operand
+	with tab instead of space.
+
+	Backport arm-aarch64-4.7 r195022:
+	2013-01-08  Tejas Belagod  <tejas.belagod@arm.com>
+	
+	* gcc.target/aarch64/vect-mull-compile.c: Explicitly scan for
+	instructions generated instead of number of occurances.
+
+	Backport arm-aarch64-4.7 r195026:
+	2013-01-08  Tejas Belagod  <tejas.belagod@arm.com>
+	
+	* config/aarch64/aarch64-simd.md (vec_init<mode>): New.
+	* config/aarch64/aarch64-protos.h (aarch64_expand_vector_init): Declare.
+	* config/aarch64/aarch64.c (aarch64_simd_dup_constant,
+	aarch64_simd_make_constant, aarch64_expand_vector_init): New.
+
+	Backport arm-aarch64-4.7 r195079:
+	* config/aarch64/aarch64.c (aarch64_print_operand): Replace %r
+	in asm_fprintf with reg_names.
+	(aarch64_print_operand_address): Likewise.
+	(aarch64_return_addr): Likewise.
+	* config/aarch64/aarch64.h (ASM_FPRINTF_EXTENSIONS): Remove.
+
+	Backport arm-aarch64-4.7 r195090:
+	[AARCH64-4.7] Backport: Fix support for vectorization over sqrt (), sqrtf ().
+	
+	gcc/
+	* config/aarch64/aarch64-builtins.c
+	(aarch64_builtin_vectorized_function): Handle sqrt, sqrtf.
+	
+	gcc/testsuite/
+	* gcc.target/aarch64/vsqrt.c (test_square_root_v2sf): Use
+	endian-safe float pool loading.
+	(test_square_root_v4sf): Likewise.
+	(test_square_root_v2df): Likewise.
+	* lib/target-supports.exp
+	(check_effective_target_vect_call_sqrtf): Add AArch64.
+
+	Backport arm-aarch64-4.7 r195157:
+	2013-01-14  Tejas Belagod  <tejas.belagod@arm.com>
+	
+	gcc/
+	* config/aarch64/aarch64-simd.md (*aarch64_simd_ld1r<mode>): New.
+	* config/aarch64/iterators.md (VALLDI): New.
+	
+	testsuite/
+	* gcc.target/aarch64/aarch64/vect-ld1r-compile-fp.c: New.
+	* gcc.target/aarch64/vect-ld1r-compile.c: New.
+	* gcc.target/aarch64/vect-ld1r-fp.c: New.
+	* gcc.target/aarch64/vect-ld1r.c: New.
+	* gcc.target/aarch64/vect-ld1r.x: New.
+
+	Backport arm-aarch64-4.7 r195206:
+	[AARCH64] Fix __clear_cache.
+
+	Backport arm-aarch64-4.7 r195267:
+	2013-01-17  Yufeng Zhang  <yufeng.zhang@arm.com>
+	
+	* config/aarch64/sync-cache.c (__aarch64_sync_cache_range): Cast the
+	results of (dcache_lsize - 1) and (icache_lsize - 1) to the type
+	__UINTPTR_TYPE__; also cast 'base' to the same type before the
+	alignment operation.
+
+	Backport arm-aarch64-4.7 r195269:
+	Moved change logs of backported changes to ChangeLog.aarch64 in libgcc.
+
+	Backport arm-aarch64-4.7 r195294:
+	2013-01-18  Tejas Belagod  <tejas.belagod@arm.com>
+	
+	gcc/
+	* config/aarch64/arm_neon.h: Map scalar types to standard types.
+
+	Backport arm-aarch64-4.7 r195298:
+	[AArch64-4.7] Backport: Add support for floating-point vcond.
+	
+	gcc/
+	* config/aarch64/aarch64-simd.md
+	(aarch64_simd_bsl<mode>_internal): Add floating-point modes.
+	(aarch64_simd_bsl): Likewise.
+	(aarch64_vcond_internal<mode>): Likewise.
+	(vcond<mode><mode>): Likewise.
+	(aarch64_cm<cmp><mode>): Fix constraints, add new modes.
+	* config/aarch64/iterators.md (V_cmp_result): Add V2DF.
+	gcc/testsuite/
+	* gcc/testsuite/gcc.target/aarch64/vect-fcm-eq-d.c: New.
+	* gcc/testsuite/gcc.target/aarch64/vect-fcm-eq-f.c: Likewise.
+	* gcc/testsuite/gcc.target/aarch64/vect-fcm-ge-d.c: Likewise.
+	* gcc/testsuite/gcc.target/aarch64/vect-fcm-ge-f.c: Likewise.
+	* gcc/testsuite/gcc.target/aarch64/vect-fcm-gt-d.c: Likewise.
+	* gcc/testsuite/gcc.target/aarch64/vect-fcm-gt-f.c: Likewise.
+	* gcc/testsuite/gcc.target/aarch64/vect-fcm.x: Likewise.
+	* gcc/testsuite/lib/target-supports.exp
+	(check_effective_target_vect_cond): Enable for AArch64.
+
+	Backport arm-aarch64-4.7 r195300:
+	[AArch64-4.7] Backport: Fix unordered comparisons to floating-point vcond.
+	
+	gcc/
+	* config/aarch64/aarch64-simd.md
+	(aarch64_vcond_internal<mode>): Handle unordered cases.
+	* config/aarch64/iterators.md (v_cmp_result): New.
+	gcc/testsuite/
+	* gcc.target/aarch64/vect-fcm-gt-f.c: Change expected output.
+	* gcc.target/aarch64/vect-fcm-gt-d.c: Likewise.
+	* gcc.target/aarch64/vect-fcm-ge-f.c: Likewise.
+	* gcc.target/aarch64/vect-fcm-ge-d.c: Likewise.
+	* gcc.target/aarch64/vect-fcm-eq-f.c: Likewise.
+
+	Backport arm-aarch64-4.7 r195466:
+	2013-01-25  Tejas Belagod  <tejas.belagod@arm.com>
+	
+	* config/aarch64/aarch64-simd-builtins.def: Separate sq<r>dmulh_lane
+	entries into lane and laneq entries.
+	* config/aarch64/aarch64-simd.md (aarch64_sq<r>dmulh_lane<mode>): Remove
+	AdvSIMD scalar modes.
+	(aarch64_sq<r>dmulh_laneq<mode>): New.
+	(aarch64_sq<r>dmulh_lane<mode>): New RTL pattern for Scalar AdvSIMD
+	modes.
+	* config/aarch64/arm_neon.h: Fix all the vq<r>dmulh_lane* intrinsics'
+	builtin implementations to relfect changes in RTL in aarch64-simd.md.
+	* config/aarch64/iterators.md (VCOND): New.
+	(VCONQ): New.
+
+	Backport arm-aarch64-4.7 r195670:
+	Back port from mainline implementaion of target hook TARGET_FIXED_CONDITION_CODE_REGS to optimize cmp for some cases
+
+	Backport arm-aarch64-4.7 r195671:
+	Added test case that tests the implementation of TARGET_FIXED_CONDITION_CODE_REGS
+
+	Backport arm-aarch64-4.7 r195710:
+	[AARCH64-4.7] Fix warning - Initialise generic_tunings.
+	
+	gcc/
+	* config/aarch64/aarch64.c (generic_tunings): Initialise.
+
+	Backport arm-aarch64-4.7 r195711:
+	[AARCH64-4.7] Fix warning - aarch64_add_constant mixed code and declarations.
+	
+	gcc/
+	* config/aarch64/aarch64.c
+	(aarch64_add_constant): Move declaration of 'shift' above code.
+
+	Backport arm-aarch64-4.7 r195712:
+	[AARCH64-4.7] Fix warning - aarch64_legitimize_reload_address passes the
+	wrong type to push_reload.
+	
+	gcc/
+	* config/aarch64/aarch64.c
+	(aarch64_legitimize_reload_address): Cast 'type' before
+	passing to push_reload.
+
+	Backport arm-aarch64-4.7 r195714:
+	[AARCH64-4.7] Fix warning - aarch64_trampoline_init passes the wrong type to emit_library_call.
+	
+	gcc/
+	* config/aarch64/aarch64.c
+	(aarch64_trampoline_init): Pass 'LCT_NORMAL' rather than '0'
+	to emit_library_call.
+
+	Backport arm-aarch64-4.7 r195715:
+	[AARCH64-4.7] Fix warning - Mixed code and declarations in aarch64_simd_const_bounds.
+	
+	gcc/
+	* config/aarch64/aarch64.c
+	(aarch64_simd_const_bounds): Move declaration of 'lane' above code.
+
+	Backport arm-aarch64-4.7 r195716:
+	[AARCH64-4.7] Backport: Fix warning in aarch64.md
+	
+	gcc/
+	* config/aarch64/aarch64.md (insv_imm<mode>): Add modes
+	for source operands.
+
+2013-02-05  Yvan Roux  <yvan.roux@linaro.org>
+
+	Merge from FSF GCC 4.7.3 (svn branches/gcc-4_7-branch 195745).
+
+2013-02-05  Yvan Roux  <yvan.roux@linaro.org>
+
+	Backport from mainline r193508
+
+	2012-11-14  Matthias Klose  <doko@ubuntu.com>
+
+	* doc/invoke.texi: Document -print-multiarch.
+	* doc/install.texi: Document --enable-multiarch.
+	* doc/fragments.texi: Document MULTILIB_OSDIRNAMES, MULTIARCH_DIRNAME.
+	* configure.ac: Add --enable-multiarch option.
+	* configure: Regenerate.
+	* Makefile.in (s-mlib): Pass MULTIARCH_DIRNAME to genmultilib.
+	enable_multiarch, with_float: New macros.
+	if_multiarch: New macro, define in terms of enable_multiarch.
+	* genmultilib: Add new argument for the multiarch name.
+	* gcc.c (multiarch_dir): Define.
+	(for_each_path): Search for multiarch suffixes.
+	(driver_handle_option): Handle multiarch option.
+	(do_spec_1): Pass -imultiarch if defined.
+	(main): Print multiarch.
+	(set_multilib_dir): Separate multilib and multiarch names
+	from multilib_select.
+	(print_multilib_info): Ignore multiarch names in multilib_select.
+	* incpath.c (add_standard_paths): Search the multiarch include dirs.
+	* cppdefault.h (default_include): Document multiarch in multilib
+	member.
+	* cppdefault.c: [LOCAL_INCLUDE_DIR, STANDARD_INCLUDE_DIR] Add an
+	include directory for multiarch directories.
+	* common.opt: New options --print-multiarch and -imultilib.
+	* config.gcc <i[34567]86-*-linux* | x86_64-*-linux*> (tmake_file):
+	Include i386/t-linux.
+	<i[34567]86-*-kfreebsd*-gnu | x86_64-*-kfreebsd*-gnu> (tmake_file):
+	Include i386/t-kfreebsd.
+	<i[34567]86-*-gnu*> (tmake_file): Include i386/t-gnu.
+	* config/i386/t-linux64: Add multiarch names in
+	MULTILIB_OSDIRNAMES, define MULTIARCH_DIRNAME.
+	* config/i386/t-gnu: New file.
+	* config/i386/t-kfreebsd: Likewise.
+	* config/i386/t-linux: Likewise.
+
+2013-02-05  Kugan Vivekanandarajah  <kuganv@linaro.org>
+
+	Backport from mainline r195555:
+	2013-01-29  Greta Yorsh  <Greta.Yorsh@arm.com>
+
+	* config/arm/cortex-a7.md (cortex_a7_neon, cortex_a7_all): Remove.
+	(cortex_a7_idiv): Use cortex_a7_both instead of cortex_a7_all.
+
+	Backport from mainline r195554:
+	2013-01-29  Greta Yorsh  <Greta.Yorsh@arm.com>
+
+	* config/arm/arm.c (cortexa7_younger): Return true for TYPE_CALL.
+	* config/arm/cortex-a7.md (cortex_a7_call): Update required units.
+
+	Backport from mainline r195553:
+	2013-01-29  Greta Yorsh  <Greta.Yorsh@arm.com>
+
+	* config/arm/arm-protos.h (arm_mac_accumulator_is_result): New
+	declaration.
+	* config/arm/arm.c (arm_mac_accumulator_is_result): New function.
+	* config/arm/cortex-a7.md: New bypasses using
+	arm_mac_accumulator_is_result.
+
+	Backport from mainline r195552:
+	2013-01-29  Greta Yorsh  <Greta.Yorsh@arm.com>
+
+	* config/arm/cortex-a7.md (cortex_a7_neon_mul):  New reservation.
+	(cortex_a7_neon_mla): Likewise.
+	(cortex_a7_fpfmad): New reservation.
+	(cortex_a7_fpmacs): Use ffmas and update required units.
+	(cortex_a7_fpmuld): Update required units and latency.
+	(cortex_a7_fpmacd): Likewise.
+	(cortex_a7_fdivs, cortex_a7_fdivd): Likewise.
+	(cortex_a7_neon). Likewise.
+	(bypass) Update participating units.
+
+	Backport from mainline r195551:
+	2013-01-29  Greta Yorsh  <Greta.Yorsh@arm.com>
+
+	* config/arm/arm.md (type): Add ffmas and ffmad to "type" attribute.
+	* config/arm/vfp.md (fma,fmsub,fnmsub,fnmadd): Change type
+	from fmac to ffma.
+	* config/arm/vfp11.md (vfp_farith): Use ffmas.
+	(vfp_fmul): Use ffmad.
+	* config/arm/cortex-r4f.md (cortex_r4_fmacs): Use ffmas.
+	(cortex_r4_fmacd): Use ffmad.
+	* config/arm/cortex-m4-fpu.md (cortex_m4_fmacs): Use ffmas.
+	* config/arm/cortex-a9.md (cortex_a9_fmacs):  Use ffmas.
+	(cortex_a9_fmacd): Use ffmad.
+	* config/arm/cortex-a8-neon.md (cortex_a8_vfp_macs): Use ffmas.
+	(cortex_a8_vfp_macd): Use ffmad.
+	* config/arm/cortex-a5.md (cortex_a5_fpmacs): Use ffmas.
+	(cortex_a5_fpmacd): Use ffmad.
+	* config/arm/cortex-a15-neon.md (cortex_a15_vfp_macs) Use ffmas.
+	(cortex_a15_vfp_macd): Use ffmad.
+	* config/arm/arm1020e.md (v10_fmul): Use ffmas and ffmad.
+
+	Backport from mainline r194656:
+	2012-12-21  Greta Yorsh  <Greta.Yorsh@arm.com>
+
+	* config/arm/cortex-a7.md: New file.
+	* config/arm/t-arm (MD_INCLUDES): Add cortex-a7.md.
+	* config/arm/arm.md: Include cortex-a7.md.
+	(generic_sched): Don't use generic scheduler for Cortex-A7.
+	(generic_vfp): Likewise.
+	* config/arm/arm.c: (TARGET_SCHED_REORDER): Use arm_sched_reorder.
+	(arm_sched_reorder,cortexa7_sched_reorder): New function.
+	(cortexa7_older_only,cortexa7_younger): Likewise.
+	(arm_issue_rate): Add Cortex-A7.
+
+
+	Backport from mainline r194557:
+	2012-12-17  Greta Yorsh  <Greta.Yorsh@arm.com>
+	
+	* config/arm/arm.md (type): Add "simple_alu_shift" to attribute "type".
+	(core_cycles): Update for simple_alu_shift.
+	(thumb1_zero_extendhisi2,arm_zero_extendhisi2_v6): Use simple_alu_shift
+	instead of a CPU-speicific condition for "type" attribute.
+	(thumb1_zero_extendqisi2_v6,arm_zero_extendqisi2_v6): Likewise.
+	(thumb1_extendhisi2,arm_extendhisi2_v6,arm_extendqisi_v6): Likewise.
+	(thumb1_extendqisi2): Likewise.
+	* config/arm/thumb2.md (thumb2_extendqisi_v6): Likewise.
+	(thumb2_zero_extendhisi2_v6,thumb2_zero_extendqisi2_v6) Likewise.
+	* config/arm/arm1020e.md (alu_shift_op): Use simple_alu_shift.
+	* config/arm/arm1026ejs.md (alu_shift_op): Likewise.
+	* config/arm/arm1136jfs.md (11_alu_shift_op): Likewise.
+	* config/arm/arm926ejs.md (9_alu_op): Likewise.
+	* config/arm/cortex-a15.md (cortex_a15_alu_shift): Likewise.
+	* config/arm/cortex-a5.md (cortex_a5_alu_shift): Likewise.
+	* config/arm/cortex-a8.md (cortex_a8_alu_shift,cortex_a8_mov): Likewise.
+	* config/arm/cortex-a9.md (cortex_a9_dp,cortex_a9_dp_shift): Likewise.
+	* config/arm/cortex-m4.md (cortex_m4_alu): Likewise.
+	* config/arm/cortex-r4.md (cortex_r4_alu_shift): Likewise.
+	* config/arm/fa526.md (526_alu_shift_op): Likewise.
+	* config/arm/fa606te.md (fa606te_core): Likewise.
+	* config/arm/fa626te.md (626te_alu_shift_op): Likewise.
+	* config/arm/fa726te.md (726te_alu_shift_op): Likewise.
+	* config/arm/fmp626.md (mp626_alu_shift_op): Likewise.
+
+
+	Backport from mainline r193996:
+	2012-11-30  Ramana Radhakrishnan <Ramana.Radhakrishnan@arm.com>
+	Greta Yorsh  <Greta.Yorsh@arm.com>
+
+	* config/arm/arm.md (type): Subdivide "alu" into "alu_reg"
+	and "simple_alu_imm".
+	(core_cycles): Use new names.
+	(arm_addsi3): Set type of patterns to use to alu_reg and simple_alu_imm.
+	(addsi3_compare0, addsi3_compare0_scratch): Likewise.
+	(addsi3_compare_op1, addsi3_compare_op2, compare_addsi2_op0): Likewise.
+	(compare_addsi2_op1, arm_subsi3_insn, subsi3_compare0): Likewise.
+	(subsi3_compare, arm_decscc,arm_andsi3_insn): Likewise.
+	(thumb1_andsi3_insn, andsi3_compare0_scratch): Likewise.
+	(zeroextractsi_compare0_scratch,iorsi3_insn,iorsi3_compare0): Likewise.
+	(iorsi3_compare0_scratch, arm_xorsi3, thumb1_xorsi3_insn): Likewise.
+	(xorsi3_compare0, xorsi3_compare0_scratch): Likewise.
+	(thumb1_zero_extendhisi2,arm_zero_extendhisi2_v6): Likewise.
+	(thumb1_zero_extendqisi2_v, arm_zero_extendqisi2_v6): Likewise.
+	(thumb1_extendhisi2, arm_extendqisi_v6): Likewise.
+	(thumb1_extendqisi2, arm_movsi_insn): Likewise.
+	(movsi_compare0, movhi_insn_arch4, movhi_bytes): Likewise.
+	(arm_movqi_insn, thumb1_movqi_insn, arm_cmpsi_insn): Likewise.
+	(movsicc_insn, if_plus_move, if_move_plus): Likewise.
+	* config/arm/neon.md (neon_mov<mode>/VDX): Likewise.
+	(neon_mov<mode>/VQXMOV): Likewise.
+	* config/arm/arm1020e.md (1020alu_op): Likewise.
+	* config/arm/fmp626.md (mp626_alu_op): Likewise.
+	* config/arm/fa726te.md (726te_alu_op): Likewise.
+	* config/arm/fa626te.md (626te_alu_op): Likewise.
+	* config/arm/fa606te.md (606te_alu_op): Likewise.
+	* config/arm/fa526.md (526_alu_op): Likewise.
+	* config/arm/cortex-r4.md (cortex_r4_alu, cortex_r4_mov): Likewise.
+	* config/arm/cortex-m4.md (cortex_m4_alu): Likewise.
+	* config/arm/cortex-a9.md (cprtex_a9_dp): Likewise.
+	* config/arm/cortex-a8.md (cortex_a8_alu, cortex_a8_mov): Likewise.
+	* config/arm/cortex-a5.md (cortex_a5_alu): Likewise.
+	* config/arm/cortex-a15.md (cortex_a15_alu): Likewise.
+	* config/arm/arm926ejs.md (9_alu_op): Likewise.
+	* config/arm/arm1136jfs.md (11_alu_op): Likewise.
+	* config/arm/arm1026ejs.md (alu_op): Likewise.
+
+2013-02-05  Kugan Vivekanandarajah  <kuganv@linaro.org>
+
+	Backport from mainline r194587:
+	2012-12-18  Kyrylo Tkachov  <kyrylo.tkachov@arm.com>
+
+	* config/arm/driver-arm.c (arm_cpu_table):
+	Add Cortex-A7.
+
+2013-01-15  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2013-01-15  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	GCC Linaro 4.7-2013.01 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2013-01-10  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	Merge from FSF GCC 4.7.3 (svn branches/gcc-4_7-branch 194772).
+
+2013-01-10  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	Merge from FSF arm/aarch64-4.7-branch r194220..r194808.
+
+	Backport arm-aarch64-4.7 r194220:
+	gcc/
+	
+	2012-12-05  Yufeng Zhang  <yufeng.zhang@arm.com>
+	
+	* config/aarch64/aarch64.c (aarch64_mangle_type): New function.
+	(TARGET_MANGLE_TYPE): Define.
+	
+	gcc/testsuite/
+	
+	2012-12-05  Yufeng Zhang  <yufeng.zhang@arm.com>
+	
+	* g++.dg/abi/arm_va_list.C: Also test on aarch64*-*-*.
+
+	Backport arm-aarch64-4.7 r194222:
+	[AARCH64-4.7] Backport vectorize standard math patterns.
+	
+	gcc/
+	
+	* config/aarch64/aarch64-builtins.c
+	(aarch64_builtin_vectorized_function): New.
+	* config/aarch64/aarch64-protos.h
+	(aarch64_builtin_vectorized_function): Declare.
+	* config/aarch64/aarch64-simd-builtins.def (frintz, frintp): Add.
+	(frintm, frinti, frintx, frinta, fcvtzs, fcvtzu): Likewise.
+	(fcvtas, fcvtau, fcvtps, fcvtpu, fcvtms, fcvtmu): Likewise.
+	* config/aarch64/aarch64-simd.md
+	(aarch64_frint_<frint_suffix><mode>): New.
+	(<frint_pattern><mode>2): Likewise.
+	(aarch64_fcvt<frint_suffix><su><mode>): Likewise.
+	(l<fcvt_pattern><su_optab><fcvt_target><VDQF:mode>2): Likewise.
+	* config/aarch64/aarch64.c (TARGET_VECTORIZE_BUILTINS): Define.
+	(TARGET_VECTORIZE_BUILTIN_VECTORIZED_FUNCTION): Likewise.
+	* config/aarch64/aarch64.md
+	(btrunc<mode>2, ceil<mode>2, floor<mode>2)
+	(round<mode>2, rint<mode>2, nearbyint<mode>2): Consolidate as...
+	(<frint_pattern><mode>2): ...this.
+	(lceil<su_optab><mode><mode>2, lfloor<su_optab><mode><mode>2)
+	(lround<su_optab><mode><mode>2)
+	(lrint<su_optab><mode><mode>2): Consolidate as...
+	(l<fcvt_pattern><su_optab><GPF:mode><GPI:mode>2): ... this.
+	* config/aarch64/iterators.md (fcvt_target): New.
+	(FCVT_TARGET): Likewise.
+	(FRINT): Likewise.
+	(FCVT): Likewise.
+	(frint_pattern): Likewise.
+	(frint_suffix): Likewise.
+	(fcvt_pattern): Likewise.
+	
+	gcc/testsuite/
+	
+	* gcc.dg/vect/vect-rounding-btrunc.c: New test.
+	* gcc.dg/vect/vect-rounding-btruncf.c: Likewise.
+	* gcc.dg/vect/vect-rounding-ceil.c: Likewise.
+	* gcc.dg/vect/vect-rounding-ceilf.c: Likewise.
+	* gcc.dg/vect/vect-rounding-floor.c: Likewise.
+	* gcc.dg/vect/vect-rounding-floorf.c: Likewise.
+	* gcc.dg/vect/vect-rounding-lceil.c: Likewise.
+	* gcc.dg/vect/vect-rounding-lfloor.c: Likewise.
+	* gcc.dg/vect/vect-rounding-nearbyint.c: Likewise.
+	* gcc.dg/vect/vect-rounding-nearbyintf.c: Likewise.
+	* gcc.dg/vect/vect-rounding-round.c: Likewise.
+	* gcc.dg/vect/vect-rounding-roundf.c: Likewise.
+	* target-supports.exp
+	(check_effective_target_vect_call_btrunc): New.
+	(check_effective_target_vect_call_btruncf): Likewise.
+	(check_effective_target_vect_call_ceil): Likewise.
+	(check_effective_target_vect_call_ceilf): Likewise.
+	(check_effective_target_vect_call_floor): Likewise.
+	(check_effective_target_vect_call_floorf): Likewise.
+	(check_effective_target_vect_call_lceil): Likewise.
+	(check_effective_target_vect_call_lfloor): Likewise.
+	(check_effective_target_vect_call_nearbyint): Likewise.
+	(check_effective_target_vect_call_nearbyintf): Likewise.
+	(check_effective_target_vect_call_round): Likewise.
+	(check_effective_target_vect_call_roundf): Likewise.
+
+	Backport arm-aarch64-4.7 r194246:
+	gcc/
+	
+	2012-12-05  Yufeng Zhang  <yufeng.zhang@arm.com>
+	
+	* config/aarch64/aarch64.c (aarch64_simd_mangle_map_entry): New
+	typedef.
+	(aarch64_simd_mangle_map): New table.
+	(aarch64_mangle_type): Locate and return the mangled name for
+	a given AdvSIMD vector type.
+	
+	gcc/testsuite/
+	
+	2012-12-05  Yufeng Zhang  <yufeng.zhang@arm.com>
+	
+	* g++.dg/abi/mangle-neon-aarch64.C: New test.
+
+	Backport arm-aarch64-4.7 r194259:
+	[AARCH64-4.7] Backport fix to slp-perm-8.c
+	
+	gcc/testsuite/
+	
+	Backport from mainline.
+	2012-05-31  Greta Yorsh  <Greta.Yorsh@arm.com>
+	
+	* lib/target-supports.exp (check_effective_target_vect_char_mult): Add
+	arm32 to targets.
+	* gcc.dg/vect/slp-perm-8.c (main): Prevent vectorization
+	of the initialization loop.
+	(dg-final): Adjust the expected number of vectorized loops depending
+	on vect_char_mult target selector.
+
+	Backport arm-aarch64-4.7 r194260:
+	[AARCH64] Implement Vector Permute Support.
+	
+	gcc/
+	Backport from mainline.
+	2012-12-05  James Greenhalgh  <james.greenhalgh@arm.com>
+	
+	* config/aarch64/aarch64-protos.h
+	(aarch64_split_combinev16qi): New.
+	(aarch64_expand_vec_perm): Likewise.
+	(aarch64_expand_vec_perm_const): Likewise.
+	* config/aarch64/aarch64-simd.md (vec_perm_const<mode>): New.
+	(vec_perm<mode>): Likewise.
+	(aarch64_tbl1<mode>): Likewise.
+	(aarch64_tbl2v16qi): Likewise.
+	(aarch64_combinev16qi): New.
+	* config/aarch64/aarch64.c
+	(aarch64_vectorize_vec_perm_const_ok): New.
+	(aarch64_split_combinev16qi): Likewise.
+	(MAX_VECT_LEN): Define.
+	(expand_vec_perm_d): New.
+	(aarch64_expand_vec_perm_1): Likewise.
+	(aarch64_expand_vec_perm): Likewise.
+	(aarch64_evpc_tbl): Likewise.
+	(aarch64_expand_vec_perm_const_1): Likewise.
+	(aarch64_expand_vec_perm_const): Likewise.
+	(aarch64_vectorize_vec_perm_const_ok): Likewise.
+	(TARGET_VECTORIZE_VEC_PERM_CONST_OK): Likewise.
+	* config/aarch64/iterators.md
+	(unspec): Add UNSPEC_TBL, UNSPEC_CONCAT.
+	(V_cmp_result): Add mapping for V2DF.
+	
+	gcc/testsuite/
+	
+	Backport from mainline.
+	2012-12-05  James Greenhalgh  <james.greenhalgh@arm.com>
+	
+	* lib/target-supports.exp
+	(check_effective_target_vect_perm): Allow aarch64*-*-*.
+	(check_effective_target_vect_perm_byte): Likewise.
+	(check_effective_target_vect_perm_short): Likewise.
+	(check_effective_target_vect_char_mult): Likewise.
+	(check_effective_target_vect_extract_even_odd): Likewise.
+	(check_effective_target_vect_interleave): Likewise.
+
+	Backport arm-aarch64-4.7 r194261:
+	[AARCH64-4.7] Add zip{1, 2}, uzp{1, 2}, trn{1, 2} support for vector permute.
+	
+	gcc/
+	Backport from mainline.
+	2012-12-05  James Greenhalgh  <james.greenhalgh@arm.com>
+	
+	* config/aarch64/aarch64-simd-builtins.def: Add new builtins.
+	* config/aarch64/aarch64-simd.md (simd_type): Add uzp.
+	(aarch64_<PERMUTE:perm_insn><PERMUTE:perm_hilo><mode>): New.
+	* config/aarch64/aarch64.c (aarch64_evpc_trn): New.
+	(aarch64_evpc_uzp): Likewise.
+	(aarch64_evpc_zip): Likewise.
+	(aarch64_expand_vec_perm_const_1): Check for trn, zip, uzp patterns.
+	* config/aarch64/iterators.md (unspec): Add neccessary unspecs.
+	(PERMUTE): New.
+	(perm_insn): Likewise.
+	(perm_hilo): Likewise.
+
+	Backport arm-aarch64-4.7 r194553:
+	[AARCH64] Backport support for TARGET_VECTORIZE_AUTOVECTORIZE_VECTOR_SIZES.
+	
+	gcc/
+	
+	* config/aarch64/aarch64.c
+	(aarch64_autovectorize_vector_sizes): New.
+	(TARGET_VECTORIZE_AUTOVECTORIZE_VECTOR_SIZES): Define.
+	
+	gcc/testsuite/
+	
+	* lib/target-supports.exp
+	(check_effective_target_vect_multiple_sizes): Enable for AArch64.
+
+	Backport arm-aarch64-4.7 r194673:
+	Make zero_extends explicit for common AArch64 SI mode patterns
+
+	Backport arm-aarch64-4.7 r194808:
+	[AArch64] Backport: Fix some warnings about unused variables.
+	
+	gcc/
+	* config/aarch64/aarch64.c (aarch64_simd_attr_length_move):
+	Remove unused variables.
+	(aarch64_split_compare_and_swap): Likewise.
+
+2012-12-20  Brice Dobry  <brice.dobry@linaro.org>
+
+	Backport from mainline r191181
+
+	2012-09-11  Tobias Burnus  <burnus@net-b.de>
+
+	* doc/sourcebuild.texi (arm_neon_v2_ok): Fix @anchor.
+
+2012-12-20  Brice Dobry  <brice.dobry@linaro.org>
+
+	Blueprints: backport-the-fma-intrinsic, fused-multiply-add-support
+
+	Backport from mainline r192560
+
+	2012-10-18  Matthew Gretton-Dann  <matthew.gretton-dann@arm.com>
+	            Ramana Radhakrishnan  <ramana.radhakrishnan@arm.com>
+
+	* config/arm/arm.c (neon_builtin_data): Add vfma and vfms
+	builtins.
+	* config/arm/neon-docgen.ml (intrinsic_groups): Add
+	fused-multiply-* groups.
+	* config/neon-gen.ml (print_feature_test_start): New function.
+	(print_feature_test_end): Likewise.
+	(print_variant): Print feature test macros.
+	* config/arm/neon-testgen.ml (emit_prologue): Allow different
+	tests to require different effective targets.
+	(effective_target): New function.
+	(test_intrinsic): Specify correct effective targets.
+	* gcc/config/arm/neon.md (fma<VCVTF:mode>4_intrinsic): New pattern.
+	(fmsub<VCVTF:mode>4_intrinsic): Likewise.
+	(neon_vfma<VCVFT:mode>): New expand.
+	(neon_vfms<VCVFT:mode>): Likewise.
+	* config/neon.ml (opcode): Add Vfma and Vfms.
+	(features): Add Requires_feature.
+	(ops): Add VFMA and VFMS intrinsics.
+	* config/arm/arm_neon.h: Regenerate.
+	* doc/arm-neon-intrinsics.texi: Likewise.
+
+
+2012-12-20  Brice Dobry  <brice.dobry@linaro.org>
+
+	Blueprints: backport-the-fma-intrinsic, fused-multiply-add-support
+
+	Backport from mainline r191180
+
+	2012-09-11  Ramana Radhakrishnan  <ramana.radhakrishnan@arm.com>
+	Matthew Gretton-Dann  <matthew.gretton-dann@arm.com>
+
+	* config/arm/neon.md (fma<VCVTF:mode>4): New pattern.
+	(*fmsub<VCVTF:mode>4): Likewise.
+	* doc/sourcebuild.texi (arm_neon_v2_ok, arm_neon_v2_hw):  Document it.
+
+2012-12-20  Brice Dobry  <brice.dobry@linaro.org>
+
+	Blueprints: backport-the-fma-intrinsic, fused-multiply-add-support
+
+	Backport from mainline r189283
+
+	2012-07-05  Matthew Gretton-Dann  <matthew.gretton-dann@arm.com>
+	
+	* config/arm/iterators.md (SDF): New mode iterator.
+	(V_if_elem): Add support for SF and DF modes.
+	(V_reg): Likewise.
+	(F_constraint): New mode iterator attribute.
+	(F_fma_type): Likewise.
+	config/arm/vfp.md (fma<SDF:mode>4): New pattern.
+	(*fmsub<SDF:mode>4): Likewise.
+	(*fmnsub<SDF:mode>4): Likewise.
+	(*fmnadd<SDF:mode>4): Likewise.
+
+2012-12-20  Brice Dobry  <brice.dobry@linaro.org>
+
+	Blueprints: backport-the-fma-intrinsic, fused-multiply-add-support
+
+	Partial backport from mainline r188946
+
+	2012-06-25  Matthew Gretton-Dann  <matthew.gretton-dann@arm.com>
+	            James Greenhalgh  <james.greenhalgh@arm.com>
+	* config/arm/arm.h (TARGET_CPU_CPP_BUILTINS): Add new built-ins.
+	(TARGET_FMA): New macro.
+
+2012-12-20  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	Backport from mainline
+
+	gcc/
+	2012-12-17  Andrew Stubbs  <ams@codesourcery.com>
+		    Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	* config/arm/arm.md (zero_extend<mode>di2): Add extra alternatives
+	for NEON registers.
+	Add alternative for one-instruction extend-in-place.
+	(extend<mode>di2): Likewise.
+	Add constraints for Thumb-mode memory loads.
+	Prevent extend splitters doing NEON alternatives.
+	* config/arm/iterators.md (qhs_extenddi_cstr, qhs_zextenddi_cstr):
+	Adjust constraints to add new alternatives.
+	* config/arm/neon.md: Add splitters for zero- and sign-extend.
+
+	gcc/testsuite/
+	2012-12-17  Andrew Stubbs  <ams@codesourcery.com>
+		    Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	* gcc.target/arm/neon-extend-1.c: New file.
+	* gcc.target/arm/neon-extend-2.c: New file.
+
+	gcc/testsuite/
+	2012-10-01  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	* gcc.dg/lower-subreg-1.c: Disable on arm*-*-* targets.
+
+	gcc/
+	2012-09-27  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	* lower-subreg.c (enum classify_move_insn): Rename
+	SIMPLE_PSEUDO_REG_MOVE to DECOMPOSABLE_SIMPLE_MOVE.
+	(find_decomposable_subregs): Update.
+	(decompose_multiword_subregs): Add DECOMPOSE_COPIES parameter.
+	Only mark pseudo-to-pseudo copies as DECOMPOSABLE_SIMPLE_MOVE
+	if that parameter is true.
+	(rest_of_handle_lower_subreg): Call decompose_multiword_subregs
+	with DECOMPOSE_COPIES false.
+	(rest_of_handle_lower_subreg2): Call decompose_multiword_subregs
+	with DECOMPOSE_COPIES true.
+
+	gcc/testsuite/
+	2012-09-27  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	* gcc.dg/lower-subreg-1.c: Disable on arm-*-* targets.
+
+2012-12-19  Christophe Lyon  <christophe.lyon@linaro.org>
+
+	gcc/testsuite/
+	* gcc.target/arm/builtin-bswap16-1.c: Replace armv6 by armv7a to
+	avoid failure when testing on hard-float+thumb target.
+	* gcc.target/arm/builtin-bswap-1.c: Likewise.
+
+
+	Backport from mainline r191760:
+
+	2012-09-21  Christophe Lyon <christophe.lyon@linaro.org>
+
+	gcc/
+	* tree-ssa-math-opts.c (bswap_stats): Add found_16bit field.
+	(execute_optimize_bswap): Add support for builtin_bswap16.
+
+	gcc/testsuite/
+	* gcc.target/arm/builtin-bswap16-1.c: New testcase.
+
+
+	Backport from mainline r188526:
+
+	2012-06-13  Alexandre Oliva  <aoliva@redhat.com>
+
+	gcc/
+	* common.opt (ftree-coalesce-inlined-vars): New.
+	(ftree-coalesce-vars): New.
+	* doc/invoke.texi: Document them.
+	* tree-ssa-copyrename.c (copy_rename_partition_coalesce):
+	Implement them.
+
+	gcc/testsuite/
+	* g++.dg/tree-ssa/ivopts-2.C: Adjust for coalescing.
+	* gcc.dg/tree-ssa/forwprop-11.c: Likewise.
+	* gcc.dg/tree-ssa/ssa-fre-1.c: Likewise.
+
+
+	Backport from mainline r191243:
+
+	2012-09-13  Christophe Lyon  <christophe.lyon@linaro.org>
+	    Richard Earnshaw  <rearnsha@arm.com>
+
+	gcc/
+	* config/arm/arm.md (arm_rev): Factorize thumb1, thumb2 and arm
+	variants for rev instruction..
+	(thumb1_rev): Delete pattern.
+	(arm_revsh): New pattern to support builtin_bswap16.
+	(arm_rev16, bswaphi2): Likewise.
+
+	gcc/testsuite/
+	* gcc.target/arm/builtin-bswap-1.c: New testcase.
+
+
+	Backport from mainline r186308:
+
+	PR target/52624
+	gcc/
+	* doc/extend.texi (Other Builtins): Document __builtin_bswap16.
+	(PowerPC AltiVec/VSX Built-in Functions): Remove it.
+	* doc/md.texi (Standard Names): Add bswap.
+	* builtin-types.def (BT_UINT16): New primitive type.
+	(BT_FN_UINT16_UINT16): New function type.
+	* builtins.def (BUILT_IN_BSWAP16): New.
+	* builtins.c (expand_builtin_bswap): Add TARGET_MODE argument.
+	(expand_builtin) <BUILT_IN_BSWAP16>: New case.  Pass TARGET_MODE to
+	expand_builtin_bswap.
+	(fold_builtin_bswap): Add BUILT_IN_BSWAP16 case.
+	(fold_builtin_1): Likewise.
+	(is_inexpensive_builtin): Likewise.
+	* optabs.c (expand_unop): Deal with bswap in HImode specially.  Add
+	missing bits for bswap to libcall code.
+	* tree.c (build_common_tree_nodes): Build uint16_type_node.
+	* tree.h (enum tree_index): Add TI_UINT16_TYPE.
+	(uint16_type_node): New define.
+	* config/rs6000/rs6000-builtin.def (RS6000_BUILTIN_BSWAP_HI): Delete.
+	* config/rs6000/rs6000.c (rs6000_expand_builtin): Remove handling of
+	above builtin.
+	(rs6000_init_builtins): Likewise.
+	* config/rs6000/rs6000.md (bswaphi2): Add TARGET_POWERPC predicate.
+
+	gcc/c-family/
+	* c-common.h (uint16_type_node): Rename into...
+	(c_uint16_type_node): ...this.
+	* c-common.c (c_common_nodes_and_builtins): Adjust for above renaming.
+	* c-cppbuiltin.c (builtin_define_stdint_macros): Likewise.
+
+	gcc/testsuite/
+	* gcc.dg/builtin-bswap-1.c: Test __builtin_bswap16 & __builtin_bswap64.
+	* gcc.dg/builtin-bswap-4.c: Test __builtin_bswap16.
+	* gcc.dg/builtin-bswap-5.c: Likewise.
+	* gcc.target/i386/builtin-bswap-4.c: New test.
+
+2012-12-17  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	LP 1088898
+
+	Backport from mainline
+
+	gcc/
+	2012-09-24  Richard Guenther  <rguenther@suse.de>
+
+	PR tree-optimization/54684
+	* tree-ssa-ccp.c (optimize_unreachable): Properly update stmts.
+
+	gcc/testsuite/ 
+	2012-09-24  Richard Guenther  <rguenther@suse.de>
+
+	PR tree-optimization/54684
+	* g++.dg/torture/pr54684.C: New testcase.
+
+2012-12-14  Michael Hope  <michael.hope@linaro.org>
+
+	Backport from mainline r192569:
+
+	gcc/
+	2012-10-18  Matthew Gretton-Dann  <matthew.gretton-dann@arm.com>
+	    Ramana Radhakrishnan  <ramana.radhakrishnan@arm.com>
+	    Sameera Deshpande  <sameera.deshpande@arm.com>
+
+	* config/arm/cortex-a15-neon.md: New file.
+	* config/arm/cortex-a15.md (cortex_a15_call): Adjust reservation.
+	(cortex_a15_load1): Likewise.
+	(cortex_a15_load3): Likewise.
+	(cortex_a15_store1): Likewise.
+	(cortex_a15_store3): Likewise.
+	(cortex-a15-neon.md): Include.
+
+2012-12-14  Michael Hope  <michael.hope@linaro.org>
+
+	Backport from mainline r193724:
+
+	gcc/
+	2012-11-20  Kyrylo Tkachov  <kyrylo.tkachov@arm.com>
+
+	* config/arm/arm.md (*arm_abssi2): Define predicable attribute.
+	(*arm_neg_abssi2): Likewise.
+	* config/arm/thumb2.md (*thumb2_abssi2): Likewise.
+	(*thumb2_neg_abssi2): Likewise.
+
+	Backport from mainline r194398:
+
+	gcc/
+	2012-12-11  Kyrylo Tkachov  <kyrylo.tkachov@arm.com>
+
+	PR target/55642
+	* config/arm/thumb2.md (*thumb2_abssi2):
+	Set ce_count attribute to 2.
+	(*thumb2_neg_abssi2): Likewise.
+
+	gcc/testsuite/
+	2012-12-11  Kyrylo Tkachov  <kyrylo.tkachov@arm.com>
+
+	PR target/55642
+	* gcc.target/arm/pr55642.c: New testcase.
+
+2012-12-11  Yvan Roux  <yvan.roux@linaro.org>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2012-12-11  Yvan Roux  <yvan.roux@linaro.org>
+
+	GCC Linaro 4.7-2012.12 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2012-12-05  Michael Hope  <michael.hope@linaro.org>
+
+	Merge from FSF arm/aarch64-4.7-branch r193937..r194154.
+
+	Backport arm-aarch64-4.7 r193937:
+	gcc/ChangeLog.aarch64
+	
+	Backport from mainline.
+	2012-11-20  James Greenhalgh  <james.greenhalgh@arm.com>
+	Tejas Belagod  <tejas.belagod@arm.com>
+	
+	* config/aarch64/aarch64-builtins.c
+	(aarch64_simd_builtin_type_bits): Rename to...
+	(aarch64_simd_builtin_type_mode): ...this, make sequential.
+	(aarch64_simd_builtin_datum): Refactor members.
+	(VAR1, VAR2, ..., VAR12): Update accordingly.
+	(aarch64_simd_builtin_data): Include from aarch64-simd-builtins.def.
+	(aarch64_builtins): Update accordingly.
+	(init_aarch64_simd_builtins): Refactor, rename to...
+	(aarch64_init_simd_builtins): ...this.
+	(aarch64_simd_builtin_compare): Remove.
+	(locate_simd_builtin_icode): Likewise.
+	* config/aarch64/aarch64-protos.h (aarch64_init_builtins): New.
+	(aarch64_expand_builtin): Likewise.
+	(aarch64_load_tp): Likewise.
+	* config/aarch64/aarch64-simd-builtins.def: New file.
+	* config/aarch64/aarch64.c (aarch64_init_builtins):
+	Move to aarch64-builtins.c.
+	(aarch64_expand_builtin): Likewise.
+	(aarch64_load_tp): Remove static designation.
+	* config/aarch64/aarch64.h
+	(aarch64_builtins): Move to aarch64-builtins.c.
+
+	Backport arm-aarch64-4.7 r193939:
+	gcc/
+	
+	Backport from mainline.
+	2012-11-26  James Greenhalgh  <james.greenhalgh@arm.com>
+	
+	* config/aarch64/aarch64-builtins.c (aarch64_builtin_decls): New.
+	(aarch64_init_simd_builtins): Store declaration after builtin
+	initialisation.
+	(aarch64_init_builtins): Likewise.
+	(aarch64_builtin_decl): New.
+	* config/aarch64/aarch64-protos.h (aarch64_builtin_decl): New.
+	* config/aarch64/aarch64.c (TARGET_BUILTIN_DECL): Define.
+
+	Backport arm-aarch64-4.7 r194079:
+	[AARCH64-4.7] Refactor constant generation.
+	
+	2012-12-03  Sofiane Naci  <sofiane.naci@arm.com>
+	
+	* config/aarch64/aarch64.c (aarch64_build_constant): Update prototype.
+	Call emit_move_insn	instead of printing movi/movn/movz instructions.
+	Call gen_insv_immdi instead of printing movk instruction.
+	(aarch64_add_constant): Update prototype.
+	Generate RTL instead of printing add/sub instructions.
+	(aarch64_output_mi_thunk): Update calls to aarch64_build_constant
+	and aarch64_add_constant.
+
+	Backport arm-aarch64-4.7 r194089:
+	[AARCH64-4.7] Backport - Add vcond, vcondu support.
+	
+	Backport of revision 192985.
+	
+	gcc/
+	* config/aarch64/aarch64-simd.md
+	(aarch64_simd_bsl<mode>_internal): New pattern.
+	(aarch64_simd_bsl<mode>): Likewise.
+	(aarch64_vcond_internal<mode>): Likewise.
+	(vcondu<mode><mode>): Likewise.
+	(vcond<mode><mode>): Likewise.
+	* config/aarch64/iterators.md (UNSPEC_BSL): Add to define_constants.
+
+	Backport arm-aarch64-4.7 r194131:
+	
+	2012-12-04  Tejas Belagod  <tejas.belagod@arm.com>
+	
+	* config/aarch64/aarch64.c (aarch64_simd_vector_alignment,
+	aarch64_simd_vector_alignment_reachable): New.
+	(TARGET_VECTOR_ALIGNMENT, TARGET_VECTORIZE_VECTOR_ALIGNMENT_REACHABLE):
+	Define.
+
+	Backport arm-aarch64-4.7 r194148:
+	AArch64: Fix ICE due to	missing	TYPE_STUB_DECL on builtin va_list.
+	
+	2012-12-04  Marcus Shawcroft  <marcus.shawcroft@arm.com>
+	
+	* config/aarch64/aarch64.c (aarch64_build_builtin_va_list): Set
+	TYPE_STUB_DECL.
+
+	Backport arm-aarch64-4.7 r194153:
+	AArch64-4.7: Backport refactor of sfp-machine.h
+
+	Backport arm-aarch64-4.7 r194154:
+	AArch64-4.7: Backport implement FP_TRAPPING_EXCEPTIONS.
+
+2012-12-05  Yvan Roux  <yvan.roux@linaro.org>
+
+	Merge from FSF GCC 4.7.2 (svn branches/gcc-4_7-branch 194184).
+
+2012-11-26  Michael Hope  <michael.hope@linaro.org>
+
+	Merge from FSF arm/aarch64-4.7-branch r193473..r193768.
+
+	Backport arm-aarch64-4.7 r193473:
+	Backport from mainline: Optimise comparison where intermediate result not used (AArch64)
+
+	Backport arm-aarch64-4.7 r193474:
+	Backport from mainline: Use CSINC instead of CSEL to return 1 (AArch64)
+
+	Backport arm-aarch64-4.7 r193496:
+	Fixed up changelogs
+
+	Backport arm-aarch64-4.7 r193533:
+	Update soft-fp from glibc.
+	
+	2012-11-15  Marcus Shawcroft <marcus.shawcroft@arm.com>
+	
+	* soft-fp: Updated from glibc upstream.
+
+	Backport arm-aarch64-4.7 r193541:
+	Move ChangeLog entry to ChangeLog.aarch64.
+	
+	The previous commit put the ChangeLog entry into the wrong file.
+
+	Backport arm-aarch64-4.7 r193572:
+	Fix commit of testcase which got truncated somehow.
+
+	Backport arm-aarch64-4.7 r193650:
+	Backport from mainline: r193630.
+	
+	gcc/
+	* config/aarch64/aarch64.c
+	(aarch64_output_mi_thunk): Refactor to generate RTL patterns.
+
+	Backport arm-aarch64-4.7 r193652:
+	Backport from trunk revision 193651.
+	
+	gcc/
+	* config/aarch64/aarch64.md
+	(define_attr "sync_*"): Remove.
+	(define_attr "length"): Update.
+	Include atomics.md.
+	* config/aarch64/aarch64-protos.h
+	(aarch64_expand_compare_and_swap): Add function prototype.
+	(aarch64_split_compare_and_swap): Likewise.
+	(aarch64_split_atomic_op): Likewise.
+	(aarch64_expand_sync): Remove function prototype.
+	(aarch64_output_sync_insn): Likewise.
+	(aarch64_output_sync_lock_release): Likewise.
+	(aarch64_sync_loop_insns): Likewise.
+	(struct aarch64_sync_generator): Remove.
+	(enum aarch64_sync_generator_tag): Likewise.
+	* config/aarch64/aarch64.c
+	(aarch64_legitimize_sync_memory): Remove function.
+	(aarch64_emit): Likewise.
+	(aarch64_insn_count): Likewise.
+	(aarch64_output_asm_insn): Likewise.
+	(aarch64_load_store_suffix): Likewise.
+	(aarch64_output_sync_load): Likewise.
+	(aarch64_output_sync_store): Likewise.
+	(aarch64_output_op2): Likewise.
+	(aarch64_output_op3): Likewise.
+	(aarch64_output_sync_loop): Likewise.
+	(aarch64_get_sync_operand): Likewise.
+	(aarch64_process_output_sync_insn): Likewise.
+	(aarch64_output_sync_insn): Likewise.
+	(aarch64_output_sync_lock_release): Likewise.
+	(aarch64_sync_loop_insns): Likewise.
+	(aarch64_call_generator): Likewise.
+	(aarch64_expand_sync): Likewise.
+	(* emit_f): Remove variable.
+	(aarch64_insn_count): Likewise.
+	(FETCH_SYNC_OPERAND): Likewise.
+	(aarch64_emit_load_exclusive): New function.
+	(aarch64_emit_store_exclusive): Likewise.
+	(aarch64_emit_unlikely_jump): Likewise.
+	(aarch64_expand_compare_and_swap): Likewise.
+	(aarch64_split_compare_and_swap): Likewise.
+	(aarch64_split_atomic_op): Likewise.
+	* config/aarch64/iterators.md
+	(atomic_sfx): New mode attribute.
+	(atomic_optab): New code attribute.
+	(atomic_op_operand): Likewise.
+	(atomic_op_str): Likewise.
+	(syncop): Rename to atomic_op.
+	* config/aarch64/sync.md: Delete.
+	* config/aarch64/atomics.md: New file.
+	
+	gcc/testsuite
+	* gcc.target/aarch64/atomic-comp-swap-release-acquire.c: New testcase.
+	* gcc.target/aarch64/atomic-op-acq_rel.c: Likewise.
+	* gcc.target/aarch64/atomic-op-acquire.c: Likewise.
+	* gcc.target/aarch64/atomic-op-char.c: Likewise.
+	* gcc.target/aarch64/atomic-op-consume.c: Likewise.
+	* gcc.target/aarch64/atomic-op-imm.c: Likewise.
+	* gcc.target/aarch64/atomic-op-int.c: Likewise.
+	* gcc.target/aarch64/atomic-op-long.c: Likewise.
+	* gcc.target/aarch64/atomic-op-relaxed.c: Likewise.
+	* gcc.target/aarch64/atomic-op-release.c: Likewise.
+	* gcc.target/aarch64/atomic-op-seq_cst.c: Likewise.
+	* gcc.target/aarch64/atomic-op-short.c: Likewise.
+
+	Backport arm-aarch64-4.7 r193655:
+	Fix to commit 193652.
+	
+	gcc/
+	* config/aarch64/atomics.md: Actually add this file.
+	
+	gcc/testsuite/
+	* gcc.target/aarch64/atomic-comp-swap-release-acquire.c:
+	Actually add this file.
+	* gcc.target/aarch64/atomic-op-acq_rel.c: Likewise.
+	* gcc.target/aarch64/atomic-op-acquire.c: Likewise.
+	* gcc.target/aarch64/atomic-op-char.c: Likewise.
+	* gcc.target/aarch64/atomic-op-consume.c: Likewise.
+	* gcc.target/aarch64/atomic-op-imm.c: Likewise.
+	* gcc.target/aarch64/atomic-op-int.c: Likewise.
+	* gcc.target/aarch64/atomic-op-long.c: Likewise.
+	* gcc.target/aarch64/atomic-op-relaxed.c: Likewise.
+	* gcc.target/aarch64/atomic-op-release.c: Likewise.
+	* gcc.target/aarch64/atomic-op-seq_cst.c: Likewise.
+	* gcc.target/aarch64/atomic-op-short.c: Likewise.
+
+	Backport arm-aarch64-4.7 r193689:
+	gcc/
+	* config/aarch64/aarch64.c
+	(aarch64_output_mi_thunk): Use 4.7 API for plus_constant.
+
+	Backport arm-aarch64-4.7 r193693:
+	Fix race in parallel build.
+	
+	The gengtype-lex.c is built twice, once for BUILD and once for HOST, but the
+	HOST flavour is missing a dependency on $(BCONFIG_H).
+	
+	2012-11-21  Marcus Shawcroft  <marcus.shawcroft@arm.com>
+	
+	* Makefile.in (gengtype-lex.o): Add dependency on $(BCONFIG_H).
+
+	Backport arm-aarch64-4.7 r193696:
+	gcc/
+	* ChangeLog: Move recent entries to...
+	* ChangeLog.aarch64: ...Here.
+	
+	gcc/testsuite/
+	* ChangeLog: Move recent entries to...
+	* ChangeLog.aarch64: ...Here
+
+	Backport arm-aarch64-4.7 r193730:
+	Backport of Implement bswaphi2 with rev16 (AArch64)
+
+	Backport arm-aarch64-4.7 r193733:
+	[AARCH64-47] Backported removal of Utf documentation.
+	
+	2012-11-22  Marcus Shawcroft  <marcus.shawcroft@arm.com>
+	
+	* doc/md.texi (AArch64 family): Remove Utf.
+
+	Backport arm-aarch64-4.7 r193765:
+	Backport of builtin_bswap16 support
+
+	Backport arm-aarch64-4.7 r193768:
+	[AARCH64-47] Reverting backport of builtin_bswap16.
+	
+	Reverted:
+	r193765 | ibolton | 2012-11-23 17:53:08 +0000 (Fri, 23 Nov 2012) | 1 line
+	
+	Backport of builtin_bswap16 support
+
+2012-11-19  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	Backport from mainline
+
+	gcc/
+	2012-11-13  Andrew Stubbs  <ams@codesourcery.com>
+		    Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	* config/arm/arm.c (arm_emit_coreregs_64bit_shift): Fix comment.
+	* config/arm/arm.md (opt, opt_enabled): New attributes.
+	(enabled): Use opt_enabled.
+	(ashldi3, ashrdi3, lshrdi3): Add TARGET_NEON case.
+	(ashldi3): Allow general operands for TARGET_NEON case.
+	* config/arm/iterators.md (rshifts): New code iterator.
+	(shift, shifttype): New code attributes.
+	* config/arm/neon.md (UNSPEC_LOAD_COUNT): New unspec type.
+	(neon_load_count, ashldi3_neon_noclobber, ashldi3_neon,
+	signed_shift_di3_neon, unsigned_shift_di3_neon,
+	ashrdi3_neon_imm_noclobber, lshrdi3_neon_imm_noclobber,
+	<shift>di3_neon): New patterns.
+
+2012-11-13  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2012-11-13  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	GCC Linaro 4.7-2012.11 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2012-11-09  Michael Hope  <michael.hope@linaro.org>
+
+	Merge from FSF arm/aarch64-4.7-branch r193293..r193328.
+
+	Backport arm-aarch64-4.7 r193293:
+	Merge from gcc trunk 193291.
+	
+	gcc/ChangeLog
+	
+	2012-11-07  Yufeng Zhang  <yufeng.zhang@arm.com>
+	
+	* config/aarch64/aarch64.c (aarch64_expand_prologue): For the
+	load-pair with writeback instruction, replace
+	aarch64_set_frame_expr with add_reg_note (REG_CFA_ADJUST_CFA);
+	add new local variable 'cfa_reg' and use it.
+	
+	gcc/testsuite/ChangeLog
+	
+	2012-11-07  Yufeng Zhang  <yufeng.zhang@arm.com>
+	
+	* gcc.target/aarch64/dwarf-cfa-reg.c: New test.
+
+	Backport arm-aarch64-4.7 r193300:
+	Merge from gcc trunk 193299.
+	
+	gcc/ChangeLog
+	
+	2012-11-07  Yufeng Zhang  <yufeng.zhang@arm.com>
+	
+	* config/aarch64/aarch64.c (aarch64_expand_prologue): add the missing
+	argument 'Pmode' to the 'plus_constant' call.
+
+	Backport arm-aarch64-4.7 r193328:
+	gcc/ChangeLog
+	
+	2012-11-08  Yufeng Zhang  <yufeng.zhang@arm.com>
+	
+	Revert:
+	2012-11-07  Yufeng Zhang  <yufeng.zhang@arm.com>
+	
+	* config/aarch64/aarch64.c (aarch64_expand_prologue): add the missing
+	argument 'Pmode' to the 'plus_constant' call.
+
+2012-11-07  Michael Hope  <michael.hope@linaro.org>
+
+	Merge from FSF GCC 4.7.2 (svn branches/gcc-4_7-branch 193200).
+
+2012-10-18  Michael Hope  <michael.hope@linaro.org>
+
+	Merge from FSF arm/aarch64-4.7-branch r192117..r192536.
+
+	Backport arm-aarch64-4.7 r192117:
+	[AARCH64-4.7] Add missing constraints to fnmadd.
+
+	* config/aarch64/aarch64.md (*fnmadd<mode>4): Add missing
+	constraints.
+
+	Backport arm-aarch64-4.7 r192127:
+	[AARCH64-4.7] Remove inline asm implementations of vqdmlxl.
+
+	Backport arm-aarch64-4.7 r192501:
+	[AARCH64-4.7] Add predefines for AArch64 code models.
+
+	2012-10-16  Chris Schlumberger-Socha <chris.schlumberger-socha@arm.com>
+
+	* config/aarch64/aarch64.h (TARGET_CPU_CPP_BUILTINS): Add predefine for
+	AArch64 code models.
+
+	Backport arm-aarch64-4.7 r192504:
+	[AARCH64-4.7] Fix ICE in aarch64_split_doubleword_move.
+
+	2012-10-16  Marcus Shawcroft <marcus.shawcroft@arm.com>
+
+	* config/aarch64/aarch64-protos.h (aarch64_split_doubleword_move):
+	Rename to aarch64_split_128bit_move.
+	(aarch64_split_128bit_move_p): New.
+	* config/aarch64/aarch64.c (aarch64_split_doubleword_move):
+	Rename to aarch64_split_128bit_move.
+	(aarch64_split_128bit_move_p): New.
+	* config/aarch64/aarch64.md: Adjust TImode move split.
+
+	Backport arm-aarch64-4.7 r192507:
+	Only permit valid operand range for SBFIZ
+
+	Backport arm-aarch64-4.7 r192508:
+	[AARCH64-4.7] Fix saturating doubling multiply NEON Intrinsics.
+
+	Backport arm-aarch64-4.7 r192536:
+	[AArch64] Update logical immediate instruction pattern.
+
+	* config/aarch64/aarch64.md (<optab><mode>3):
+	Update constraint for operand 0.
+	Update scheduling attribute for the second alternative.
+
+2012-10-09  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2012-10-09  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	GCC Linaro 4.7-2012.10 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2012-10-05  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	Merge from fsf gcc arm/aarch64-4.7-branch
+	(svn branches/arm/aarch64-4.7-branch 192093).
+
+2012-10-03  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	Merge from fsf gcc arm/aarch64-4.7-branch
+	(svn branches/arm/aarch64-4.7-branch 191926).
+
+2012-10-02  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	LP: #1053348
+	Re-merge binary files from GCC 4.7:
+
+	libgo/
+	* go/archive/zip/testdata/r.zip: Remove.
+	* go/archive/zip/testdata/crc32-not-streamed.zip: New file.
+	* go/archive/zip/testdata/go-no-datadesc-sig.zip: Likewise.
+	* go/archive/zip/testdata/go-with-datadesc-sig.zip: Likewise.
+	* go/debug/dwarf/testdata/typedef.elf: Update.
+	* go/debug/dwarf/testdata/typedef.macho: Likewise.
+
+2012-10-01  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	Merge from FSF GCC 4.7.2 (svn branches/gcc-4_7-branch 191881).
+
+2012-09-20  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	Backport from mainline:
+
+	gcc/
+	2012-09-17  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	* config/arm/arm.c (arm_rtx_costs_1): Handle vec_extract and vec_set
+	patterns.
+	* config/arm/arm.md ("vec_set<mode>_internal"): Support memory source
+	operands, implemented via vld1 instruction.
+	("vec_extract<mode>"): Support memory destination operands, implemented
+	via vst1 instruction.
+	("neon_vst1_lane<mode>"): Use UNSPEC_VST1_LANE instead of vec_select.
+	* config/arm/predicates.md ("neon_lane_number"): Remove.
+
+2012-09-20  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	Backport from mainline:
+
+	gcc/
+	2012-09-17  Ramana Radhakrishnan  <ramana.radhakrishnan@linaro.org>
+		    Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	* config/arm/arm.c (output_move_neon): Update comment.
+	Use vld1.64/vst1.64 instead of vldm/vstm where possible.
+	(neon_vector_mem_operand): Support double-word modes.
+	* config/arm/neon.md (*neon_mov VD): Call output_move_neon
+	instead of output_move_vfp.  Change constraint from Uv to Un.
+
+2012-09-12  Michael Hope  <michael.hope@linaro.org>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2012-09-12  Michael Hope  <michael.hope@linaro.org>
+
+	GCC Linaro 4.7-2012.09 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2012-09-11  Michael Hope  <michael.hope@linaro.org>
+
+	Merge from FSF GCC 4.7.1 (svn branches/gcc-4_7-branch 191123).
+
+2012-09-11  Michael Hope  <michael.hope@linaro.org>
+
+	LP: #1046999
+	Revert:
+
+	gcc/
+	2012-08-17  Richard Earnshaw  <rearnsha@arm.com>
+
+	* arm.md (arm_addsi3): New variant for Thumb2 16-bit ADD instruction.
+	* arm.c (thumb2_reorg): Don't convert an ADD instruction that's
+	already 16 bits.
+
+	Backport from mainline r190530:
+
+	gcc/testsuite/
+	2012-08-20  Richard Earnshaw  <rearnsha@arm.com>
+
+	* gcc.target/arm/thumb-16bit-ops.c (f): This test uses a 16-bit
+	add instruction.
+	(f2): New test that really does need adds.
+
+2012-09-05  Christophe Lyon  <christophe.lyon@linaro.org>
+
+	Backport from mainline r190911:
+
+	2012-09-04  Christophe Lyon  <christophe.lyon@linaro.org>
+
+	gcc/
+	* config/arm/arm.c (arm_evpc_neon_vext): New function.
+        (arm_expand_vec_perm_const_1): Add call to arm_evpc_neon_vext.
+
+        gcc/testsuite/
+        * gcc.target/arm/neon-vext.c: New test.
+        * gcc.target/arm/neon-vext-execute.c: Ditto.
+
+2012-09-04  Michael Hope  <michael.hope@linaro.org>
+
+	Backport from mainline r189610:
+
+	2012-07-18  Andrew Stubbs  <ams@codesourcery.com>
+	    Mark Shinwell  <shinwell@codesourcery.com>
+	    Julian Brown  <julian@codesourcery.com>
+
+	gcc/
+	* config/arm/vfp.md (*arm_movsi_vfp, *thumb2_movsi_vfp)
+	(*movdi_vfp_cortexa8, *movsf_vfp, *thumb2_movsf_vfp)
+	(*movdf_vfp, *thumb2_movdf_vfp, *movsfcc_vfp)
+	(*thumb2_movsfcc_vfp, *movdfcc_vfp, *thumb2_movdfcc_vfp): Add
+	neon_type.
+	* config/arm/arm.md (neon_type): Update comment.
+
+2012-08-27  Michael Hope  <michael.hope@linaro.org>
+
+	Backport from mainline r190472:
+
+	gcc/
+	2012-08-17  Richard Earnshaw  <rearnsha@arm.com>
+
+	* arm.md (arm_addsi3): New variant for Thumb2 16-bit ADD instruction.
+	* arm.c (thumb2_reorg): Don't convert an ADD instruction that's
+	already 16 bits.
+
+	Backport from mainline r190530:
+
+	gcc/testsuite/
+	2012-08-20  Richard Earnshaw  <rearnsha@arm.com>
+
+	* gcc.target/arm/thumb-16bit-ops.c (f): This test uses a 16-bit
+	add instruction.
+	(f2): New test that really does need adds.
+
+2012-08-06  Michael Hope  <michael.hope@linaro.org>
+
+	Backport from mainline r190088:
+
+	gcc/
+	2012-08-02  Richard Earnshaw  <rearnsha@arm.com>
+
+	* arm.c (arm_gen_constant): Use UBFX for some AND operations when
+	available.
+
+	Backport from mainline r190143:
+
+	gcc/
+	2012-08-04  Richard Earnshaw  <rearnsha@arm.com>
+
+	* arm.c (arm_gen_constant): Use SImode when preparing operands for
+	gen_extzv_t2.
+
+2012-08-13  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2012-08-13  Matthew Gretton-Dann  <matthew.gretton-dann@linaro.org>
+
+	GCC Linaro 4.7-2012.08 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2012-08-10  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	Backport from mainline:
+
+	gcc/
+	2012-07-30  Ulrich Weigand  <ulrich.weigand@linaro.org>
+		    Richard Earnshaw  <rearnsha@arm.com>
+
+	* target.def (vector_alignment): New target hook.
+	* doc/tm.texi.in (TARGET_VECTOR_ALIGNMENT): Document new hook.
+	* doc/tm.texi: Regenerate.
+	* targhooks.c (default_vector_alignment): New function.
+	* targhooks.h (default_vector_alignment): Add prototype.
+	* stor-layout.c (layout_type): Use targetm.vector_alignment.
+	* config/arm/arm.c (arm_vector_alignment): New function.
+	(TARGET_VECTOR_ALIGNMENT): Define.
+
+	* tree-vect-data-refs.c (vect_update_misalignment_for_peel): Use
+	vector type alignment instead of size.
+	* tree-vect-loop-manip.c (vect_do_peeling_for_loop_bound): Use
+	element type size directly instead of computing it from alignment.
+	Fix variable naming and comment.
+
+	gcc/testsuite/
+	2012-07-30  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	* lib/target-supports.exp
+	(check_effective_target_vect_natural_alignment): New function.
+	* gcc.dg/align-2.c: Only run on targets with natural alignment
+	of vector types.
+	* gcc.dg/vect/slp-25.c: Adjust tests for targets without natural
+	alignment of vector types.
+
+2012-08-01  Michael Hope  <michael.hope@linaro.org>
+
+	Merge from FSF GCC 4.7.1 (svn branches/gcc-4_7-branch 189992).
+
+2012-07-26  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	LP 1020601
+
+	Backport from mainline:
+
+	2012-07-16  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	gcc/
+	* tree-ssa-ccp.c (optimize_unreachable): Check gsi_end_p
+	before calling gsi_stmt.
+
+	2012-07-06  Tom de Vries  <tom@codesourcery.com>
+		    Richard Guenther  <rguenther@suse.de>
+
+	gcc/
+	* tree-ssa-ccp.c (optimize_unreachable): New function.
+	(execute_fold_all_builtins): Use optimize_unreachable to optimize
+	BUILT_IN_UNREACHABLE.  Don't optimize after BUILT_IN_UNREACHABLE.
+
+	gcc/testsuite/
+	* gcc.dg/builtin-unreachable-6.c: New test.
+	* gcc.dg/builtin-unreachable-5.c: New test.
+
+2012-05-04  Michael Hope  <michael.hope@linaro.org>
+
+	Backport from mainline r189611:
+
+	gcc/
+	2012-07-18  Jie Zhang  <jzhang918@gmail.com>
+	    Julian Brown  <julian@codesourcery.com>
+
+	* config/arm/arm.c (arm_rtx_costs_1): Adjust cost for
+	CONST_VECTOR.
+	(arm_size_rtx_costs): Likewise.
+	(neon_valid_immediate): Add a case for double 0.0.
+
+	gcc/testsuite/
+	2012-07-18  Jie Zhang  <jzhang918@gmail.com>
+	    Julian Brown  <julian@codesourcery.com>
+
+	* gcc.target/arm/neon-vdup-1.c: New test case.
+	* gcc.target/arm/neon-vdup-2.c: New test case.
+	* gcc.target/arm/neon-vdup-3.c: New test case.
+	* gcc.target/arm/neon-vdup-4.c: New test case.
+	* gcc.target/arm/neon-vdup-5.c: New test case.
+	* gcc.target/arm/neon-vdup-6.c: New test case.
+	* gcc.target/arm/neon-vdup-7.c: New test case.
+	* gcc.target/arm/neon-vdup-8.c: New test case.
+	* gcc.target/arm/neon-vdup-9.c: New test case.
+	* gcc.target/arm/neon-vdup-10.c: New test case.
+	* gcc.target/arm/neon-vdup-11.c: New test case.
+	* gcc.target/arm/neon-vdup-12.c: New test case.
+	* gcc.target/arm/neon-vdup-13.c: New test case.
+	* gcc.target/arm/neon-vdup-14.c: New test case.
+	* gcc.target/arm/neon-vdup-15.c: New test case.
+	* gcc.target/arm/neon-vdup-16.c: New test case.
+	* gcc.target/arm/neon-vdup-17.c: New test case.
+	* gcc.target/arm/neon-vdup-18.c: New test case.
+	* gcc.target/arm/neon-vdup-19.c: New test case.
+	* gcc.target/arm/neon-combine-sub-abs-into-vabd.c: Make intrinsic
+	arguments non-constant.
+
+2012-07-24  Michael Hope  <michael.hope@linaro.org>
+
+	Backport from mainline r186859:
+
+	gcc/
+	2012-04-28  Joern Rennecke  <joern.rennecke@embecosm.com>
+	    Steven Bosscher  <steven@gcc.gnu.org>
+	    Maxim Kuvyrkov  <maxim@codesourcery.com>
+
+	PR tree-optimization/38785
+	* common.opt (ftree-partial-pre): New option.
+	* doc/invoke.texi: Document it.
+	* opts.c (default_options_table): Initialize flag_tree_partial_pre.
+	* tree-ssa-pre.c (do_partial_partial_insertion): Insert only if it will
+	benefit speed path.
+	(execute_pre): Use flag_tree_partial_pre.
+
+2012-07-02  Michael Hope  <michael.hope@linaro.org>
+
+	Backport from mainline r189102:
+
+	gcc/
+	2012-07-01  Wei Guozhi  <carrot@google.com>
+
+	PR target/53447
+	* config/arm/arm-protos.h (const_ok_for_dimode_op): New prototype.
+	* config/arm/arm.c (const_ok_for_dimode_op): New function.
+	* config/arm/constraints.md (Dd): New constraint.
+	* config/arm/predicates.md (arm_adddi_operand): New predicate.
+	* config/arm/arm.md (adddi3): Extend it to handle constants.
+	(arm_adddi3): Likewise.
+	(addsi3_carryin_<optab>): Extend it to handle sbc case.
+	(addsi3_carryin_alt2_<optab>): Likewise.
+	* config/arm/neon.md (adddi3_neon): Extend it to handle constants.
+
+	gcc/testsuite/
+	2012-07-01  Wei Guozhi  <carrot@google.com>
+
+	PR target/53447
+	* gcc.target/arm/pr53447-1.c: New testcase.
+	* gcc.target/arm/pr53447-2.c: New testcase.
+	* gcc.target/arm/pr53447-3.c: New testcase.
+	* gcc.target/arm/pr53447-4.c: New testcase.
+
+2012-07-05  Ramana Radhakrishnan  <ramana.radhakrishnan@linaro.org>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2012-07-05  Ramana Radhakrishnan  <ramana.radhakrishnan@linaro.org>
+
+	GCC Linaro 4.7-2012.07 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2012-07-02  Michael Hope  <michael.hope@linaro.org>
+
+	Merge from FSF (GCC SVN branches/gcc-4_7-branch:189098)
+
+2012-06-29  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	Backport from mainline:
+
+	gcc/
+	PR tree-optimization/53729
+	PR tree-optimization/53636
+	* tree-vect-slp.c (vect_slp_analyze_bb_1): Delay call to
+	vect_verify_datarefs_alignment until after statements have
+	been marked as relevant/irrelevant.
+	* tree-vect-data-refs.c (vect_verify_datarefs_alignment):
+	Skip irrelevant statements.
+	(vect_enhance_data_refs_alignment): Use STMT_VINFO_RELEVANT_P
+	instead of STMT_VINFO_RELEVANT.
+	(vect_get_data_access_cost): Do not check for supportable
+	alignment before calling vect_get_load_cost/vect_get_store_cost.
+	* tree-vect-stmts.c (vect_get_store_cost): Do not abort when
+	handling unsupported alignment.
+	(vect_get_load_cost): Likewise.
+
+2012-06-21  Ramana Radhakrishnan  <ramana.radhakrishnan@linaro.org>
+
+	gcc/
+	* tree-ssa-loop-ivopts.c (add_autoinc_candidates, get_address_cost):
+	Replace use of HAVE_{POST/PRE}_{INCREMENT/DECREMENT} with
+	USE_{LOAD/STORE}_{PRE/POST}_{INCREMENT/DECREMENT} appropriately.
+	* config/arm/arm.h (ARM_AUTOINC_VALID_FOR_MODE_P): New.
+	(USE_LOAD_POST_INCREMENT): Define.
+	(USE_LOAD_PRE_INCREMENT): Define.
+	(USE_LOAD_POST_DECREMENT): Define.
+	(USE_LOAD_PRE_DECREMENT): Define.
+	(USE_STORE_PRE_DECREMENT): Define.
+	(USE_STORE_PRE_INCREMENT): Define.
+	(USE_STORE_POST_DECREMENT): Define.
+	(USE_STORE_POST_INCREMENT): Define.
+	(enum arm_auto_incmodes): New.
+	* config/arm/arm-protos.h (arm_autoinc_modes_ok_p): Declare.
+	* config/arm/arm.c (arm_autoinc_modes_ok_p): Define.
+
+2012-06-15  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	LP 1010826
+
+	Backport from mainline:
+
+	gcc/
+	PR tree-optimization/53636
+	* tree-vect-data-refs.c (vect_compute_data_ref_alignment): Verify
+	stride when doing basic-block vectorization.
+
+	gcc/testsuite/
+	PR tree-optimization/53636
+	* gcc.target/arm/pr53636.c: New test.
+
+2012-06-14  Michael Hope  <michael.hope@linaro.org>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2012-06-12  Michael Hope  <michael.hope@linaro.org>
+
+	GCC Linaro 4.7-2012.06 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2012-06-06  Ramana Radhakrishnan  <ramana.radhakrishnan@linaro.org>
+
+	For Andrew Stubbs.
+        2012-05-31  Andrew Stubbs  <ams@codesourcery.com>
+	Merge from FSF (GCC SVN branches/gcc-4_7-branch:188038)
+
+2012-06-06  Ramana Radhakrishnan  <ramana.radhakrishnan@linaro.org>
+
+	Backport from mainline:
+	gcc/
+	2012-03-15  Ramana Radhakrishnan  <ramana.radhakrishnan@linaro.org>
+
+	* config.gcc (target_type_format_char): New. Document it. Set it for
+        arm*-*-* .
+
+2012-06-04  Zhenqiang Chen <zhenqiang.chen@linaro.org>
+
+	Backport from mainline r187327 and r187323
+
+	gcc/
+	2012-05-09  Terry Guo  <terry.guo@arm.com>
+	* genmultilib: Update copyright dates.
+	* doc/fragments.texi: Ditto.
+
+	2012-05-09  Terry Guo  <terry.guo@arm.com>
+	* Makefile.in (s-mlib): Add new argument MULTILIB_REQUIRED.
+	* genmultilib (MULTILIB_REQUIRED): New.
+	* doc/fragments.texi: Document the MULTILIB_REQUIRED.
+
+2012-05-26  Ramana Radhakrishnan <ramana.radhakrishnan@linaro.org>
+
+	gcc/
+	* config/arm/arm.c (arm_evpc_neon_vrev): Fix off by one
+	error and make sure we generate vrev instructions.
+	gcc/testsuite
+	* gcc.target/arm/neon-vrev.c: New.
+
+2012-05-23  Ramana Radhakrishnan  <ramana.radhakrishnan@linaro.org>
+
+	LP:990530
+	gcc/
+        2012-03-12  Richard Guenther  <rguenther@suse.de>
+	* config/arm/arm.c (neon_dereference_pointer): Do not call
+	covert during RTL expansion.
+
+2012-05-18  Andrew Stubbs  <ams@codesourcery.com>
+
+	Backport from mainline:
+
+	2012-05-18  Andrew Stubbs  <ams@codesourcery.com>
+
+	gcc/
+	* config/arm/arm-protos.h (arm_emit_coreregs_64bit_shift): New
+	prototype.
+	* config/arm/arm.c (arm_emit_coreregs_64bit_shift): New function.
+	* config/arm/arm.md (ashldi3): Use arm_emit_coreregs_64bit_shift.
+	(ashrdi3,lshrdi3): Likewise.
+	(arm_cond_branch): Remove '*' to enable gen_arm_cond_branch.
+
+2012-05-15  Andrew Stubbs  <ams@codesourcery.com>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2012-05-15  Andrew Stubbs  <ams@codesourcery.com>
+
+	GCC Linaro 4.7-2012.05 released.
+
+	gcc/
+	* LINARO-VERSION: Update.
+
+2012-05-15  Andrew Stubbs  <ams@codesourcery.com>
+
+	Merge from FSF (GCC SVN branches/gcc-4_7-branch:187448)
+
+2012-05-08  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	LP 959242
+
+	Backport from mainline:
+
+	gcc/
+	PR tree-optimization/52633
+	* tree-vect-patterns.c (vect_vect_recog_func_ptrs): Swap order of
+	vect_recog_widen_shift_pattern and vect_recog_over_widening_pattern.
+	(vect_recog_over_widening_pattern): Remove handling of code that was
+	already detected as over-widening pattern.  Remove special handling
+	of "unsigned" cases.  Instead, support general case of conversion
+	of the shift result to another type.
+
+	gcc/testsuite/
+	PR tree-optimization/52633
+	* gcc.dg/vect/vect-over-widen-1.c: Two patterns should now be
+	recognized as widening shifts instead of over-widening.
+	* gcc.dg/vect/vect-over-widen-1-big-array.c: Likewise.
+	* gcc.dg/vect/vect-over-widen-4.c: Likewise.
+	* gcc.dg/vect/vect-over-widen-4-big-array.c: Likewise.
+	* gcc.target/arm/pr52633.c: New test.
+
+	gcc/
+	* tree-vect-patterns.c (vect_single_imm_use): New function.
+	(vect_recog_widen_mult_pattern): Use it instead of open-coding loop.
+	(vect_recog_over_widening_pattern): Likewise.
+	(vect_recog_widen_shift_pattern): Likewise.
+
+	gcc/
+	* tree-vect-patterns.c (vect_same_loop_or_bb_p): New function.
+	(vect_handle_widen_op_by_const): Use it instead of open-coding test.
+	(vect_recog_widen_mult_pattern): Likewise.
+	(vect_operation_fits_smaller_type): Likewise.
+	(vect_recog_over_widening_pattern): Likewise.
+	(vect_recog_widen_shift_pattern): Add to vect_same_loop_or_bb_p test.
+
+2012-05-04  Michael Hope  <michael.hope@linaro.org>
+
+	Backport from mainline r186859:
+
+	gcc/
+	2012-04-26  Michael Hope  <michael.hope@linaro.org>
+		    Richard Earnshaw  <rearnsha@arm.com>
+
+	* config/arm/linux-eabi.h (GLIBC_DYNAMIC_LINKER_SOFT_FLOAT): Define.
+	(GLIBC_DYNAMIC_LINKER_HARD_FLOAT): Define.
+	(GLIBC_DYNAMIC_LINKER_DEFAULT): Define.
+	(GLIBC_DYNAMIC_LINKER):	Redefine to use the hard float path.
+
+	Backport from mainline r187012:
+
+	gcc/
+	2012-05-01  Richard Earnshaw  <rearnsha@arm.com>
+
+	* arm/linux-eabi.h (GLIBC_DYNAMIC_LINKER_DEFAULT): Avoid ifdef
+	comparing enumeration values.  Update comments.
+
+2012-04-30  Andrew Stubbs  <ams@codesourcery.com>
+
+	gcc/
+	* config/arm/arm.md (negdi2): Use gen_negdi2_neon.
+	* config/arm/neon.md (negdi2_neon): New insn.
+	Also add splitters for core and NEON registers.
+
+2012-04-30  Andrew Stubbs  <ams@codesourcery.com>
+
+	gcc/
+	* config/arm/arm.c (neon_valid_immediate): Allow const_int.
+	(arm_print_operand): Add 'x' format.
+	* config/arm/constraints.md (Dn): Allow const_int.
+	* config/arm/neon.md (neon_mov<mode>): Use VDX to allow DImode.
+	Use 'x' format to print constants.
+	* config/arm/predicates.md (imm_for_neon_mov_operand): Allow const_int.
+	* config/arm/vfp.md (movdi_vfp): Disable for const_int when neon
+	is enabled.
+	(movdi_vfp_cortexa8): Likewise.
+
+2012-04-13  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	LP 968766
+
+	Backport from mainline:
+
+	gcc/
+	PR tree-optimization/52870
+	* tree-vect-patterns.c (vect_recog_widen_mult_pattern): Verify that
+	presumed pattern statement is within the same loop or basic block.
+
+	gcc/testsuite/
+	PR tree-optimization/52870
+	* gcc.dg/vect/pr52870.c: New test.
+
+2012-04-10  Andrew Stubbs  <ams@codesourcery.com>
+
+	gcc/
+	* LINARO-VERSION: Bump version.
+
+2012-04-10  Andrew Stubbs  <ams@codesourcery.com>
+
+	GCC Linaro 4.7-2012.04 released.
+
+	gcc/
+	* LINARO-VERSION: New file.
+	* configure.ac: Add Linaro version string.
+	* configure: Regenerate.
+
+2012-04-05  Andrew Stubbs  <ams@codesourcery.com>
+
+	Backport from mainline r186167:
+	
+	2012-04-05  Andrew Stubbs  <ams@codesourcery.com>
+
+	gcc/
+	* config/arm/arm.md (arch): Add neon_onlya8 and neon_nota8.
+	(arch_enabled): Handle new arch types.
+	(one_cmpldi2): Add NEON support.
+
+2012-04-02  Andrew Stubbs  <ams@codesourcery.com>
+
+	Merge from FSF (GCC SVN branches/gcc-4_7-branch:186061)
+
+2012-04-04  Andrew Stubbs  <ams@codesourcery.com>
+
+	Backport from mainline r185855:
+	
+	2012-03-27  Ramana Radhakrishnan  <ramana.radhakrishnan@linaro.org>
+
+	* gcc.target/arm/thumb-ifcvt.c: Only run for -mthumb.
+	* gcc.target/arm/thumb-16bit-ops.c: Likewise.
+
+2012-03-26  Michael Hope  <michael.hope@linaro.org>
+
+	Backport from mainline r185702:
+
+	libcpp/
+	2012-03-22  Richard Earnshaw  <rearnsha@arm.com>
+
+	* lex.c (search_line_fast): Provide Neon-optimized version for ARM.
+
+2012-03-23  Michael Hope  <michael.hope@linaro.org>
+
+	Backport from mainline r184957:
+
+	libgcc/
+	2012-03-05  Richard Henderson  <rth@redhat.com>
+
+	* longlong.h [ARM] (umul_ppmm): Use umull for arm3m and later.
+	[ARM] (count_trailing_zeros): Use the builtin.
+
+	Backport from mainline r185202:
+
+	2012-03-11  Michael Hope  <michael.hope@linaro.org>
+
+	* longlong.h [ARM] (add_ssaaaa, sub_ddmmss, umul_ppmm): Enable
+	for Thumb-2.
+
+	Backport from mainline r185698:
+
+	2012-03-22  Richard Earnshaw  <rearnsha@arm.com>
+
+	* arm/lib1funcs.asm (ctzsi2): New function.
+	* arm/t-elf (LIB1ASMFUNCS): Add _ctzsi2.
+	* arm/t-linux (LIB1ASMFUNCS): Likewise.
+	* arm/t-strongarm-elf (LIB1ASMFUNCS): Likewise.
+	* arm/t-symbian (LIB1ASMFUNCS): Likewise.
+	* arm/t-vxworks (LIB1ASMFUNCS): Likewise.
+	* arm/t-wince-pe (LIB1ASMFUNCS): Likewise.
+
+2012-03-23  Michael Hope  <michael.hope@linaro.org>
+
+	Backport from mainline r185603:
+
+	gcc/
+	2012-03-20  Richard Earnshaw  <rearnsha@arm.com>
+
+	* arm/predicates.md (zero_operand, reg_or_zero_operand): New predicates.
+	* arm/neon.md (neon_vceq<mode>, neon_vcge<mode>): Use
+	reg_or_zero_operand predicate.
+	(neon_vcle<mode>, neon_vclt<mode>): Use zero_operand predicate.
+
+2012-03-23  Michael Hope  <michael.hope@linaro.org>
+
+	Backport from mainline r185603:
+
+	gcc/
+	2012-03-21  Richard Earnshaw  <rearnsha@arm.com>
+
+	* neon.md (neon_vget_lanev2di): Use gen_lowpart and gen_highpart.
+	* config/arm/neon.ml (Fixed_return_reg): Renamed to fixed_vector_reg.
+	All callers changed.
+	(Fixed_core_reg): New feature.
+	(Vget_lane [sizes S64 and U64]): Add Fixed_core_reg.  Allow fmrrd in
+	disassembly.
+	* neon-testgen.ml: Handle Fixed_core_reg.
+
+	gcc/testsuite/
+	* gcc.target/arm/neon/vgetQ_laneu64.c: Regenerated.
+	* gcc.target/arm/neon/vgetQ_lanes64.c: Likewise.
+
+2012-03-26  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	LP 960283
+	LP 960274
+	LP 960817
+
+	Backport from mainline:
+
+	gcc/
+	PR tree-optimization/52686
+	* tree-vect-data-refs.c (vect_get_smallest_scalar_type): Handle
+	WIDEN_LSHIFT_EXPR.
+
+	gcc/testsuite/
+	PR tree-optimization/52686
+	* gcc.target/arm/pr52686.c: New test.
+
+2012-03-21  Andrew Stubbs  <ams@codesourcery.com>
+
+	Backport from FSF mainline:
+
+	2012-03-21  Andrew Stubbs  <ams@codesourcery.com>
+
+	gcc/
+	* config/arm/arm.c (thumb2_reorg): Add complete support
+	for 16-bit instructions.
+	* config/arm/thumb2.md: Delete obsolete flag-clobbering peepholes.
+
+	gcc/testsuite/
+	* gcc.target/arm/thumb-16bit-ops.c: New file.
+	* gcc.target/arm/thumb-ifcvt.c: New file.
+
+2012-03-06  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	Backport from mainline:
+
+	gcc/
+	* config/arm/arm.c (arm_sat_operator_match): New function.
+	* config/arm/arm-protos.h (arm_sat_operator_match): Add prototype.
+	* config/arm/arm.md ("insn" attribute): Add "sat" value.
+	("SAT", "SATrev"): New code iterators.
+	("SATlo", "SAThi"): New code iterator attributes.
+	("*satsi_<SAT:code>"): New pattern.
+	("*satsi_<SAT:code>_shift"): Likewise.
+	* config/arm/arm-fixed.md ("arm_ssatsihi_shift"): Add "insn"
+	and "shift" attributes.
+	("arm_usatsihi"): Add "insn" attribute.
+	* config/arm/predicates.md (sat_shift_operator): Allow multiplication
+	by powers of two.  Do not allow shift by 32.
+
+	gcc/testsuite/
+	* gcc.target/arm/sat-1.c: New test.
+
+2012-02-29  Andrew Stubbs  <ams@codesourcery.com>
+
+	Merge from FSF trunk SVN revision 184662.
+
+2012-02-27  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	gcc/
+	* combine.c (apply_distributive_law): Do not distribute SUBREG.
+
+2012-02-27  Richard Sandiford  <richard.sandiford@linaro.org>
+
+	gcc/
+	* fwprop.c (propagate_rtx): Also set PR_CAN_APPEAR for subregs.
+
+2012-02-24  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	Backport from mainline:
+
+	2012-02-22  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	gcc/testsuite/
+	* lib/target-supports.exp (check_effective_target_vect_condition):
+	Return true for NEON.
+
+2012-02-24  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	Merged from Linaro GCC 4.6, still need to be merged upstream:
+
+	2011-11-27  Ira Rosen  <ira.rosen@linaro.org>
+
+	gcc/
+	* tree-vectorizer.h (vect_pattern_recog): Add new argument.
+	* tree-vect-loop.c (vect_analyze_loop_2): Update call to
+	vect_pattern_recog.
+	* tree-vect-patterns.c (widened_name_p): Pass basic block
+	info to vect_is_simple_use.
+	(vect_recog_dot_prod_pattern): Fail for basic blocks.
+	(vect_recog_widen_sum_pattern): Likewise.
+	(vect_handle_widen_op_by_const): Support basic blocks.
+	(vect_operation_fits_smaller_type,
+	vect_recog_over_widening_pattern): Likewise.
+	(vect_recog_vector_vector_shift_pattern): Support basic blocks.
+	Update call to vect_is_simple_use.
+	(vect_recog_mixed_size_cond_pattern): Support basic blocks.
+	Add printing.
+	(check_bool_pattern): Add an argument, update call to
+	vect_is_simple_use and the recursive calls.
+	(vect_recog_bool_pattern): Update relevant function calls.
+	Add printing.
+	(vect_mark_pattern_stmts): Update calls to new_stmt_vec_info.
+	(vect_pattern_recog_1): Check for reduction only in loops.
+	(vect_pattern_recog): Add new argument.  Support basic blocks.
+	* tree-vect-stmts.c (vectorizable_conversion): Pass basic block
+	info to vect_is_simple_use_1.
+	* tree-vect-slp.c (vect_get_and_check_slp_defs): Support basic
+	blocks.
+	(vect_slp_analyze_bb_1): Call vect_pattern_recog.
+
+	gcc/testsuite/
+	* gcc.dg/vect/bb-slp-pattern-1.c: New test.
+	* gcc.dg/vect/bb-slp-pattern-2.c: New test.
+
+	2011-11-27  Ira Rosen  <ira.rosen@linaro.org>
+
+	gcc/
+	* tree-vect-patterns.c (widened_name_p): Rename to ...
+	(type_conversion_p): ... this.  Add new argument to determine
+	if it's a promotion or demotion operation.  Check for
+	CONVERT_EXPR_CODE_P instead of NOP_EXPR.
+	(vect_recog_dot_prod_pattern): Call type_conversion_p instead
+	widened_name_p.
+	(vect_recog_widen_mult_pattern, vect_recog_widen_sum_pattern,
+	vect_operation_fits_smaller_type, vect_recog_widen_shift_pattern):
+	Likewise.
+	(vect_recog_mixed_size_cond_pattern): Likewise and allow
+	non-constant then and else clauses.
+
+	gcc/testsuite/
+	* gcc.dg/vect/slp-cond-3.c: New test.
+	* gcc.dg/vect/slp-cond-4.c: New test.
+
+2012-02-17  Ulrich Weigand  <ulrich.weigand@linaro.org>
+
+	gcc/
+	* common/config/arm/arm-common.c (arm_option_optimization_table):
+	Enable -fsched-pressure using -fsched-pressure-algorithm=model by
+	default when optimizing.
+
+2012-02-17  Richard Sandiford  <richard.sandiford@linaro.org>
+
+	gcc/
+	* sched-deps.c (fixup_sched_groups): Rename to...
+	(chain_to_prev_insn): ...this.
+	(chain_to_prev_insn_p): New function.
+	(deps_analyze_insn): Use it instead of SCHED_GROUP_P.
+
+2012-02-17  Richard Sandiford  <richard.sandiford@linaro.org>
+
+	gcc/
+	* sched-int.h (_haifa_insn_data): Move priority_status.
+	Add model_index.
+	(INSN_MODEL_INDEX): New macro.
+	* haifa-sched.c (insn_delay): New function.
+	(sched_regno_pressure_class): Update commentary.
+	(mark_regno_birth_or_death): Pass the liveness bitmap and
+	pressure array as arguments, instead of using curr_reg_live and
+	curr_reg_pressure.  Only update the pressure if the bit in the
+	liveness set has changed.
+	(initiate_reg_pressure_info): Always trust the live-in set for
+	SCHED_PRESSURE_MODEL.
+	(initiate_bb_reg_pressure_info): Update call to
+	mark_regno_birth_or_death.
+	(dep_list_size): Take the list as argument.
+	(calculate_reg_deaths): New function, extracted from...
+	(setup_insn_reg_pressure_info): ...here.
+	(MODEL_BAR): New macro.
+	(model_pressure_data, model_insn_info, model_pressure_limit)
+	(model_pressure_group): New structures.
+	(model_schedule, model_worklist, model_insns, model_num_insns)
+	(model_curr_point, model_before_pressure, model_next_priority):
+	New variables.
+	(MODEL_PRESSURE_DATA, MODEL_MAX_PRESSURE, MODEL_REF_PRESSURE)
+	(MODEL_INSN_INFO, MODEL_INSN): New macros.
+	(model_index, model_update_limit_points_in_group): New functions.
+	(model_update_limit_points, model_last_use_except): Likewise.
+	(model_start_update_pressure, model_update_pressure): Likewise.
+	(model_recompute, model_spill_cost, model_excess_group_cost): Likewise.
+	(model_excess_cost, model_dump_pressure_points): Likewise.
+	(model_set_excess_costs): Likewise.
+	(rank_for_schedule): Extend SCHED_PRIORITY_WEIGHTED ordering to
+	SCHED_PRIORITY_MODEL.  Use insn_delay.  Use the order in the model
+	schedule as an alternative tie-breaker.  Update the call to
+	dep_list_size.
+	(ready_sort): Call model_set_excess_costs.
+	(update_register_pressure): Update call to mark_regno_birth_or_death.
+	Rely on that function to check liveness rather than doing it here.
+	(model_classify_pressure, model_order_p, model_add_to_worklist_at)
+	(model_remove_from_worklist, model_add_to_worklist, model_promote_insn)
+	(model_add_to_schedule, model_analyze_insns, model_init_pressure_group)
+	(model_record_pressure, model_record_pressures): New functions.
+	(model_record_final_pressures, model_add_successors_to_worklist)
+	(model_promote_predecessors, model_choose_insn): Likewise.
+	(model_reset_queue_indices, model_dump_pressure_summary): Likewise.
+	(model_start_schedule, model_finalize_pressure_group): Likewise.
+	(model_end_schedule): Likewise.
+	(schedule_insn): Say when we're scheduling the next instruction
+	in the model schedule.
+	(schedule_insn): Handle SCHED_PRESSURE_MODEL.
+	(queue_to_ready): Do not add instructions that are
+	MAX_SCHED_READY_INSNS beyond the current point of the model schedule.
+	Always allow the next instruction in the model schedule to be added.
+	(debug_ready_list): Print the INSN_REG_PRESSURE_EXCESS_COST_CHANGE
+	and delay for SCHED_PRESSURE_MODEL too.
+	(prune_ready_list): Extend SCHED_PRIORITY_WEIGHTED handling to
+	SCHED_PRIORITY_MODEL, but also take the DFA into account.
+	(schedule_block): Call model_start_schedule and model_end_schedule.
+	Extend SCHED_PRIORITY_WEIGHTED stall handling to SCHED_PRIORITY_MODEL.
+	(sched_init): Extend INSN_REG_PRESSURE_EXCESS_COST_CHANGE handling
+	to SCHED_PRESSURE_MODEL, but don't allocate saved_reg_live or
+	region_ref_regs.
+	(sched_finish): Update accordingly.
+	(fix_tick_ready): Extend INSN_REG_PRESSURE_EXCESS_COST_CHANGE handling
+	to SCHED_PRESSURE_MODEL.
+	(add_jump_dependencies): Update call to dep_list_size.
+	(haifa_finish_h_i_d): Fix leak of max_reg_pressure.
+	(haifa_init_insn): Extend INSN_REG_PRESSURE_EXCESS_COST_CHANGE handling
+	to SCHED_PRESSURE_MODEL.
+	* sched-deps.c (init_insn_reg_pressure_info): Likewise, but don't
+	allocate INSN_MAX_REG_PRESSURE for SCHED_PRESSURE_MODEL.
+	(sched_analyze_insn): Extend INSN_REG_PRESSURE_EXCESS_COST_CHANGE
+	handling to SCHED_PRESSURE_MODEL.
+
+2012-02-17  Richard Sandiford  <richard.sandiford@linaro.org>
+
+	gcc/
+	* common.opt (fsched-pressure-algorithm=): New option.
+	* flag-types.h (sched_pressure_algorithm): New enum.
+	* sched-int.h (sched_pressure_p): Replace with...
+	(sched_pressure): ...this new variable.
+	* haifa-sched.c (sched_pressure_p): Replace with...
+	(sched_pressure): ...this new variable.
+	(sched_regno_pressure_class, rank_for_schedule, ready_sort)
+	(update_reg_and_insn_max_reg_pressure, schedule_insn)
+	(debug_ready_list, prune_ready_list, schedule_block, sched_init)
+	(sched_finish, fix_tick_ready, haifa_init_insn): Update accordingly.
+	* sched-deps.c (init_insn_reg_pressure_info): Likewise.
+	(sched_analyze_insn): Likewise.
+	* sched-rgn.c (schedule_region): Likewise.
+	* config/m68k/m68k.c (m68k_sched_variable_issue): Likewise.
+
+2012-02-15  Andrew Stubbs  <ams@codesourcery.com>
+
+	Merge from FSF trunk SVN revision 184223.
+
+Imported GCC from FSF trunk SVN revision 183796.
